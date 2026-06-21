@@ -17,7 +17,7 @@ export default function Footer() {
           </span>
         </div>
         <div className="flex flex-wrap items-center gap-2 text-sm text-ink-muted">
-          <span>roomie.com.uy · Uruguay 2025 ·</span>
+          <span>roomie.com.uy ·</span>
           <a
             href="mailto:contacto.roomieuy@gmail.com"
             aria-label="Escribinos a contacto.roomieuy@gmail.com"
