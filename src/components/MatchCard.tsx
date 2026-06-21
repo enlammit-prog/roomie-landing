@@ -30,7 +30,7 @@ export default function MatchCard({ matchScore = 94 }: MatchCardProps) {
   const ringOffset = circ - (circ * score) / 100;
 
   return (
-    <div className="relative w-[340px] p-[26px] rounded-card bg-gradient-to-br from-panel-from to-panel-to border border-white/[0.09] shadow-card animate-float">
+    <div className="relative w-full max-w-[340px] p-5 sm:p-[26px] rounded-card bg-gradient-to-br from-panel-from to-panel-to border border-white/[0.09] shadow-card animate-float">
       <div className="flex items-center justify-between mb-[22px]">
         <span className="font-sora text-[12.5px] font-semibold tracking-[0.08em] text-ink-quaternary uppercase">
           Nuevo match

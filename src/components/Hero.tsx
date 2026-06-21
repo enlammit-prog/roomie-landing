@@ -20,7 +20,7 @@ export default function Hero() {
           </span>
         </div>
 
-        <h1 className="font-sora font-extrabold text-[42px] sm:text-[52px] lg:text-[60px] leading-[1.02] tracking-[-0.025em] mb-6 text-balance">
+        <h1 className="font-sora font-extrabold text-[34px] sm:text-[52px] lg:text-[60px] leading-[1.08] sm:leading-[1.02] tracking-[-0.025em] mb-6 text-balance">
           Encontrá con quién vivir, sin jugártela a ciegas.
         </h1>
 

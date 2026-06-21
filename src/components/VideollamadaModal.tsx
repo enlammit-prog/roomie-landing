@@ -73,7 +73,7 @@ export default function VideollamadaModal({
       onClick={handleClose}
     >
       <div
-        className="relative w-full max-w-[480px] rounded-card bg-gradient-to-br from-panel-from to-panel-to border border-white/[0.09] shadow-card p-8"
+        className="relative w-full max-w-[480px] rounded-card bg-gradient-to-br from-panel-from to-panel-to border border-white/[0.09] shadow-card p-5 sm:p-8"
         onClick={(e) => e.stopPropagation()}
       >
         <button
