@@ -6,7 +6,7 @@ const faqs = [
   {
     question: "¿Cómo sé que la otra persona es real?",
     answer:
-      "Antes de poder chatear, cada persona verifica su identidad con cédula y foto, más su correo institucional. Fue lo que más nos pidieron los estudiantes que encuestamos: saber con certeza con quién están hablando.",
+      "Antes de poder chatear, cada persona verifica su identidad con cédula y foto, más su correo institucional o número de estudiante de cualquier universidad. Fue lo que más nos pidieron los estudiantes que encuestamos: saber con certeza con quién están hablando.",
   },
   {
     question: "¿Tengo que ser de alguna universidad en particular?",
