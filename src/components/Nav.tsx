@@ -45,9 +45,9 @@ export default function Nav() {
           </a>
           <Link
             href="/exchange"
-            className="hidden md:inline text-[#9AA7C2] no-underline text-[14.5px] font-medium"
+            className="hidden lg:inline text-[#9AA7C2] no-underline text-[14.5px] font-medium whitespace-nowrap"
           >
-            EN
+            For exchange students
           </Link>
           <a
             href={GOOGLE_FORM_URL}
