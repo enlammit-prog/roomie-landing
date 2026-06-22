@@ -57,8 +57,8 @@ export default function Waitlist() {
             Sumate a la lista de espera
           </h2>
           <p className="text-lg text-white/[0.88] leading-[1.55] mb-9">
-            Sé de los primeros en encontrar tu roommate ideal cuando lancemos
-            en ORT. Sin spam, solo el aviso de lanzamiento.
+            Sé de los primeros en encontrar tu roommate ideal cuando lancemos.
+            Sin spam, solo el aviso de lanzamiento.
           </p>
 
           {submitted ? (
