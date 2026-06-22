@@ -1,12 +1,8 @@
-"use client";
-
-import { useState } from "react";
-import VideollamadaModal from "./VideollamadaModal";
 import HorarioCard from "./HorarioCard";
 
-export default function Hablemos() {
-  const [open, setOpen] = useState(false);
+const VIDEOCALL_BOOKING_URL = "https://calendar.app.google/rzkTFUEhQp9EWs4N6";
 
+export default function Hablemos() {
   return (
     <section
       id="hablemos"
@@ -30,12 +26,14 @@ export default function Hablemos() {
         </p>
 
         <div className="flex gap-3.5 flex-wrap">
-          <button
-            onClick={() => setOpen(true)}
-            className="border-none cursor-pointer bg-gradient-to-r from-blue to-violet text-white font-manrope text-base font-semibold px-7 py-4 rounded-btn shadow-[0_16px_38px_-16px_rgba(124,58,237,0.7)]"
+          <a
+            href={VIDEOCALL_BOOKING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gradient-to-r from-blue to-violet text-white no-underline text-base font-semibold px-7 py-4 rounded-btn shadow-[0_16px_38px_-16px_rgba(124,58,237,0.7)]"
           >
             Coordinar videollamada
-          </button>
+          </a>
           <a
             href="#waitlist"
             className="bg-transparent border border-white/[0.16] text-ink no-underline text-base font-semibold px-7 py-4 rounded-btn"
@@ -43,8 +41,6 @@ export default function Hablemos() {
             Prefiero dejar mi mail
           </a>
         </div>
-
-        <VideollamadaModal open={open} onClose={() => setOpen(false)} />
       </div>
 
       <div className="flex justify-center">
