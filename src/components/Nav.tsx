@@ -17,18 +17,30 @@ export default function Nav() {
             ROOMIE
           </span>
         </a>
-        <div className="flex items-center gap-4 sm:gap-9">
+        <div className="flex items-center gap-4 md:gap-6 lg:gap-8">
           <a
             href="#problema"
-            className="hidden sm:inline text-[#9AA7C2] no-underline text-[14.5px] font-medium"
+            className="hidden md:inline text-[#9AA7C2] no-underline text-[14.5px] font-medium"
           >
             El problema
           </a>
           <a
             href="#como"
-            className="hidden sm:inline text-[#9AA7C2] no-underline text-[14.5px] font-medium"
+            className="hidden md:inline text-[#9AA7C2] no-underline text-[14.5px] font-medium"
           >
             Cómo funciona
+          </a>
+          <a
+            href="#para-quien"
+            className="hidden md:inline text-[#9AA7C2] no-underline text-[14.5px] font-medium"
+          >
+            Para quién es
+          </a>
+          <a
+            href="#faq"
+            className="hidden md:inline text-[#9AA7C2] no-underline text-[14.5px] font-medium"
+          >
+            Preguntas
           </a>
           <a
             href={GOOGLE_FORM_URL}

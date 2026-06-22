@@ -9,7 +9,7 @@ export default function Hablemos() {
   return (
     <section id="hablemos" className="max-w-[1180px] mx-auto px-8 py-[110px]">
       <div className="flex items-baseline gap-3.5 mb-[22px]">
-        <span className="font-sora font-bold text-sm text-accent-blue">04</span>
+        <span className="font-sora font-bold text-sm text-accent-blue">06</span>
         <span className="text-sm font-semibold text-ink-quaternary">
           Hablemos
         </span>

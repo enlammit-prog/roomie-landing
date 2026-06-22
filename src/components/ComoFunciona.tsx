@@ -36,7 +36,7 @@ export default function ComoFunciona() {
         </span>
       </div>
       <h2 className="font-sora font-extrabold text-[32px] sm:text-[44px] tracking-[-0.025em] leading-[1.08] max-w-[560px] mb-16">
-        De tu interior a tu nuevo cuarto, en cinco pasos.
+        De crear tu perfil a mudarte, en cinco pasos.
       </h2>
       <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
         <div className="hidden lg:block absolute top-[19px] left-[8%] right-[8%] h-px bg-white/[0.12]" />
