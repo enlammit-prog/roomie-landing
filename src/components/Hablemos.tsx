@@ -1,6 +1,5 @@
 import HorarioCard from "./HorarioCard";
-
-const VIDEOCALL_BOOKING_URL = "https://calendar.app.google/rzkTFUEhQp9EWs4N6";
+import { BOOKING_URL } from "@/lib/links";
 
 export default function Hablemos() {
   return (
@@ -27,7 +26,7 @@ export default function Hablemos() {
 
         <div className="flex gap-3.5 flex-wrap">
           <a
-            href={VIDEOCALL_BOOKING_URL}
+            href={BOOKING_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gradient-to-r from-blue to-violet text-white no-underline text-base font-semibold px-7 py-4 rounded-btn shadow-[0_16px_38px_-16px_rgba(124,58,237,0.7)]"

@@ -39,9 +39,14 @@ const config: Config = {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-12px)" },
         },
+        "spin-slow": {
+          from: { transform: "rotate(0deg)" },
+          to: { transform: "rotate(360deg)" },
+        },
       },
       animation: {
         float: "float 6s ease-in-out infinite",
+        "spin-slow": "spin-slow 90s linear infinite",
       },
     },
   },

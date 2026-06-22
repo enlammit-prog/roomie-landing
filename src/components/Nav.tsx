@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { GOOGLE_FORM_URL } from "@/lib/links";
 
 export default function Nav() {
@@ -42,6 +43,12 @@ export default function Nav() {
           >
             Preguntas
           </a>
+          <Link
+            href="/exchange"
+            className="hidden md:inline text-[#9AA7C2] no-underline text-[14.5px] font-medium"
+          >
+            EN
+          </Link>
           <a
             href={GOOGLE_FORM_URL}
             target="_blank"
