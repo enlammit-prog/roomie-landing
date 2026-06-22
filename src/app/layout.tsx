@@ -32,14 +32,6 @@ export const metadata: Metadata = {
     description: OG_DESCRIPTION,
     url: SITE_URL,
     siteName: "ROOMIE",
-    images: [
-      {
-        url: "/roomie_profile.png",
-        width: 1000,
-        height: 1000,
-        alt: "ROOMIE",
-      },
-    ],
     locale: "es_UY",
     type: "website",
   },
@@ -47,7 +39,6 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: OG_TITLE,
     description: OG_DESCRIPTION,
-    images: ["/roomie_profile.png"],
   },
 };
 
