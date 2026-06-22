@@ -1,5 +1,6 @@
 import Orbit from "./Orbit";
 import MatchCard from "./MatchCard";
+import { GOOGLE_FORM_URL } from "@/lib/links";
 
 export default function Hero() {
   return (
@@ -24,7 +25,9 @@ export default function Hero() {
 
         <div className="flex gap-3.5 flex-wrap mb-11">
           <a
-            href="#waitlist"
+            href={GOOGLE_FORM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-gradient-to-r from-blue to-violet text-white no-underline text-base font-semibold px-7 py-4 rounded-btn shadow-[0_16px_38px_-16px_rgba(124,58,237,0.7)]"
           >
             Sumate a la lista
