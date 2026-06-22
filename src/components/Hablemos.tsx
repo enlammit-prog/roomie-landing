@@ -5,7 +5,7 @@ export default function Hablemos() {
   return (
     <section
       id="hablemos"
-      className="max-w-[1180px] mx-auto px-8 py-[110px] grid grid-cols-1 md:grid-cols-[1.08fr_0.92fr] gap-14 items-center"
+      className="max-w-[1180px] mx-auto px-8 py-[110px] grid grid-cols-1 lg:grid-cols-[1.08fr_0.92fr] gap-14 items-center"
     >
       <div>
         <div className="flex items-baseline gap-3.5 mb-[22px]">

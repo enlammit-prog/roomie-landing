@@ -73,7 +73,7 @@ export default function Faq() {
                 {isOpen && (
                   <p
                     id={`faq-answer-${i}`}
-                    className="text-[15.5px] text-ink-tertiary leading-[1.65] pb-6 pr-12"
+                    className="text-[15.5px] text-ink-tertiary leading-[1.65] pb-6 pr-6 sm:pr-12"
                   >
                     {faq.answer}
                   </p>
