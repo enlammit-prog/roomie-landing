@@ -32,7 +32,7 @@ export default function HorarioCard() {
           <span className="text-[14px] text-ink-secondary">
             Lunes a viernes
           </span>
-          <span className="text-[14px] text-ink-secondary">18:00 a 21:00</span>
+          <span className="text-[14px] text-ink-secondary">15:30 a 22:00</span>
         </div>
 
         <div className="flex items-center justify-between px-4 py-3.5 rounded-[12px] bg-gradient-to-br from-[rgba(29,78,216,0.22)] to-[rgba(124,58,237,0.22)] border border-violet/40">
@@ -40,7 +40,7 @@ export default function HorarioCard() {
             Sábados
           </span>
           <span className="text-[14px] text-white font-semibold">
-            10:00 a 13:00
+            10:00 a 12:00
           </span>
         </div>
 
