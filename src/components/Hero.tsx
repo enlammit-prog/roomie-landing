@@ -1,6 +1,5 @@
 import Orbit from "./Orbit";
 import MatchCard from "./MatchCard";
-import { GOOGLE_FORM_URL } from "@/lib/links";
 
 export default function Hero() {
   return (
@@ -13,13 +12,6 @@ export default function Hero() {
       </div>
 
       <div className="relative z-[2]">
-        <div className="inline-flex items-center gap-2.5 mb-[30px]">
-          <span className="w-[7px] h-[7px] rounded-full bg-match inline-block" />
-          <span className="text-sm font-medium text-ink-secondary">
-            Para estudiantes que llegan del interior a Montevideo
-          </span>
-        </div>
-
         <h1 className="font-sora font-extrabold text-[34px] sm:text-[52px] lg:text-[60px] leading-[1.08] sm:leading-[1.02] tracking-[-0.025em] mb-6 text-balance">
           Encontrá con quién vivir, sin jugártela a ciegas.
         </h1>
@@ -32,12 +24,10 @@ export default function Hero() {
 
         <div className="flex gap-3.5 flex-wrap mb-11">
           <a
-            href={GOOGLE_FORM_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#waitlist"
             className="bg-gradient-to-r from-blue to-violet text-white no-underline text-base font-semibold px-7 py-4 rounded-btn shadow-[0_16px_38px_-16px_rgba(124,58,237,0.7)]"
           >
-            Crear mi perfil gratis
+            Sumate a la lista
           </a>
           <a
             href="#como"

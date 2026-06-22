@@ -24,8 +24,8 @@ export default function Problema() {
         Buscar roommate hoy es un caos.
       </h2>
       <p className="text-[17.5px] text-ink-secondary max-w-[560px] mb-[60px] leading-[1.6]">
-        Los que llegan del interior no tienen una forma segura de encontrar con
-        quién vivir. Y eso pesa.
+        Los que llegan a Montevideo, del interior o de intercambio, no tienen
+        una forma segura de encontrar con quién vivir. Y eso pesa.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border-t border-white/[0.09]">
         {items.map((item, i) => (
