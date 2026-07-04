@@ -18,7 +18,7 @@ export default function ConciergeNav({ lang }: { lang: "es" | "en" }) {
     <header className="sticky top-0 z-50 bg-[rgba(11,17,36,0.72)] backdrop-blur-[14px] border-b border-hairline">
       <nav className="max-w-[1180px] mx-auto px-4 sm:px-8 py-[18px] flex items-center justify-between gap-3">
         <Link
-          href={lang === "es" ? "/concierge" : "/concierge/en"}
+          href={lang === "es" ? "/" : "/exchange"}
           className="flex items-center gap-2.5 sm:gap-3 no-underline shrink-0"
         >
           <Image
