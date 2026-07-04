@@ -52,7 +52,7 @@ export default function Nav() {
           </Link>
           <Link
             href="/concierge"
-            className="text-[#9AA7C2] no-underline text-[14.5px] font-medium whitespace-nowrap"
+            className="border border-violet/50 text-ink no-underline text-[14.5px] font-semibold px-5 py-[10px] rounded-btn whitespace-nowrap hover:border-violet hover:bg-violet/[0.08] transition-colors"
           >
             Te conseguimos vivienda
           </Link>
@@ -111,6 +111,13 @@ export default function Nav() {
 
       {open && (
         <div className="lg:hidden border-t border-hairline px-4 sm:px-8 py-5 flex flex-col gap-4 bg-[#0B1124]">
+          <Link
+            href="/concierge"
+            onClick={() => setOpen(false)}
+            className="border border-violet/50 text-ink no-underline text-[15px] font-semibold px-5 py-3 rounded-btn text-center"
+          >
+            Te conseguimos vivienda
+          </Link>
           {LINKS.map((link) => (
             <a
               key={link.href}
@@ -127,13 +134,6 @@ export default function Nav() {
             className="text-[#C7D0E4] no-underline text-[15px] font-medium"
           >
             For exchange students
-          </Link>
-          <Link
-            href="/concierge"
-            onClick={() => setOpen(false)}
-            className="text-[#C7D0E4] no-underline text-[15px] font-medium"
-          >
-            Te conseguimos vivienda
           </Link>
         </div>
       )}

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import ExchangeNav from "@/components/exchange/ExchangeNav";
 import ExchangeHero from "@/components/exchange/ExchangeHero";
 import TrustRow from "@/components/exchange/TrustRow";
+import ConciergeBannerEn from "@/components/exchange/ConciergeBannerEn";
 import ConversionBlock from "@/components/exchange/ConversionBlock";
 import Footer from "@/components/Footer";
 
@@ -24,6 +25,7 @@ export default function ExchangePage() {
       <ExchangeNav />
       <ExchangeHero />
       <TrustRow />
+      <ConciergeBannerEn />
       <ConversionBlock />
       <Footer />
     </>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Orbit from "./Orbit";
 import MatchCard from "./MatchCard";
 import { GOOGLE_FORM_URL } from "@/lib/links";
@@ -39,6 +40,16 @@ export default function Hero() {
             Ver cómo funciona
           </a>
         </div>
+
+        <p className="text-[15px] text-ink-secondary -mt-5 mb-11">
+          ¿Llegás a Montevideo y necesitás vivienda?{" "}
+          <Link
+            href="/concierge"
+            className="text-accent-violet font-semibold no-underline hover:text-ink transition-colors"
+          >
+            Te la conseguimos nosotros →
+          </Link>
+        </p>
 
         <div className="flex items-center gap-3.5">
           <div className="flex items-center">

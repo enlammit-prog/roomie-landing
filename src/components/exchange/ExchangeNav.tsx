@@ -28,6 +28,12 @@ export default function ExchangeNav() {
           >
             ES
           </Link>
+          <Link
+            href="/concierge/en"
+            className="hidden sm:inline-block border border-violet/50 text-ink no-underline text-[14.5px] font-semibold px-4 py-[9px] rounded-btn whitespace-nowrap hover:border-violet hover:bg-violet/[0.08] transition-colors"
+          >
+            Need a place to live?
+          </Link>
           <a
             href={BOOKING_URL}
             target="_blank"

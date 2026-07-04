@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { BOOKING_URL } from "@/lib/links";
 
 const checks = [
@@ -51,17 +50,6 @@ export default function ConversionBlock() {
           Book a 15-min call
         </a>
 
-        <div className="mt-14 pt-10 border-t border-white/[0.08]">
-          <p className="text-[13px] text-ink-muted mb-3">
-            Need us to find you a place to live?
-          </p>
-          <Link
-            href="/concierge/en"
-            className="text-[14.5px] text-accent-blue no-underline font-medium hover:text-ink transition-colors"
-          >
-            ROOMIE Housing Concierge →
-          </Link>
-        </div>
       </div>
     </section>
   );

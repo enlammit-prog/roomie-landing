@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -18,6 +19,18 @@ export default function Footer() {
         </div>
 
         <div className="flex items-center gap-5 flex-wrap">
+          <Link
+            href="/concierge"
+            className="text-sm text-ink-muted no-underline hover:text-ink transition-colors"
+          >
+            Te conseguimos vivienda
+          </Link>
+          <Link
+            href="/exchange"
+            className="text-sm text-ink-muted no-underline hover:text-ink transition-colors"
+          >
+            For exchange students
+          </Link>
           <span className="text-sm text-ink-muted">roomie.com.uy</span>
 
           <div className="flex items-center gap-[18px]">
