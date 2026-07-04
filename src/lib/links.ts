@@ -6,3 +6,12 @@ export const GOOGLE_FORM_URL =
 export const BOOKING_URL =
   process.env.NEXT_PUBLIC_BOOKING_URL ??
   "https://calendar.app.google/rzkTFUEhQp9EWs4N6";
+
+// Número de WhatsApp del concierge, formato internacional sin "+" ni espacios.
+// Configurable por env var para poder cambiarlo sin tocar código.
+export const WHATSAPP_NUMBER =
+  process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "59894946835";
+
+export function whatsappUrl(message: string) {
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+}
