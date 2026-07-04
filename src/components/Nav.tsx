@@ -54,7 +54,7 @@ export default function Nav() {
             href="/concierge"
             className="text-[#9AA7C2] no-underline text-[14.5px] font-medium whitespace-nowrap"
           >
-            Concierge
+            Te conseguimos vivienda
           </Link>
           <a
             href={GOOGLE_FORM_URL}
@@ -133,7 +133,7 @@ export default function Nav() {
             onClick={() => setOpen(false)}
             className="text-[#C7D0E4] no-underline text-[15px] font-medium"
           >
-            Concierge
+            Te conseguimos vivienda
           </Link>
         </div>
       )}
