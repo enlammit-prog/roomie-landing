@@ -50,6 +50,12 @@ export default function Nav() {
           >
             For exchange students
           </Link>
+          <Link
+            href="/concierge"
+            className="text-[#9AA7C2] no-underline text-[14.5px] font-medium whitespace-nowrap"
+          >
+            Concierge
+          </Link>
           <a
             href={GOOGLE_FORM_URL}
             target="_blank"
@@ -121,6 +127,13 @@ export default function Nav() {
             className="text-[#C7D0E4] no-underline text-[15px] font-medium"
           >
             For exchange students
+          </Link>
+          <Link
+            href="/concierge"
+            onClick={() => setOpen(false)}
+            className="text-[#C7D0E4] no-underline text-[15px] font-medium"
+          >
+            Concierge
           </Link>
         </div>
       )}
