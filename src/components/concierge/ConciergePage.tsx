@@ -16,7 +16,7 @@ const dict = {
     hero: {
       badge: "Concierge de vivienda para estudiantes",
       h1: "Llegá a Montevideo con tu vivienda ya resuelta.",
-      body: "Buscar dónde vivir a distancia es estresante: publicaciones dudosas, garantías, señas por lugares que nunca viste. ROOMIE es tu equipo en Montevideo — buscamos, verificamos y reservamos tu vivienda para que llegués con las llaves, no con dudas.",
+      body: "Buscar dónde vivir a distancia es estresante: publicaciones dudosas, garantías, señas por lugares que nunca viste. ROOMIE es tu equipo en Montevideo. Buscamos, verificamos y reservamos tu vivienda para que llegues con las llaves, no con dudas.",
       ctaWa: "Escribinos por WhatsApp",
       ctaCall: "O agendá una llamada corta",
       note: "Respondemos en 24 horas",
@@ -28,7 +28,7 @@ const dict = {
       },
       {
         title: "Cada opción verificada",
-        body: "Confirmamos que el lugar existe, que el dueño es legítimo y que las fotos son reales — antes de que muevas un peso.",
+        body: "Confirmamos que el lugar existe, que el dueño es legítimo y que las fotos son reales, antes de que muevas un peso.",
       },
       {
         title: "De punta a punta",
@@ -71,24 +71,24 @@ const dict = {
     faqs: [
       {
         q: "¿Cuánto cuesta?",
-        a: "Es un fee único de servicio que depende de lo que necesites. Te lo cotizamos de entrada, en la primera charla y antes de que te comprometas a nada — sin sorpresas ni porcentaje del alquiler.",
+        a: "Es un fee único de servicio que depende de lo que necesites. Te lo cotizamos de entrada, en la primera charla y antes de que te comprometas a nada. Sin sorpresas ni porcentaje del alquiler.",
       },
       {
         q: "¿Cuándo conviene empezar?",
-        a: "Idealmente 4 a 8 semanas antes de viajar. Lo mejor se va temprano cada semestre — pero si llegás antes, escribinos igual y te decimos con honestidad qué es posible.",
+        a: "Idealmente 4 a 8 semanas antes de viajar. Lo mejor se va temprano cada semestre, pero si llegás antes, escribinos igual y te decimos con honestidad qué es posible.",
       },
       {
         q: "¿También me consiguen roommate?",
-        a: "Sí — es la otra mitad de ROOMIE. Matcheamos estudiantes por hábitos y estilo de vida, con perfiles verificados. Mencionalo en el chat y resolvemos las dos cosas juntas.",
+        a: "Sí, es la otra mitad de ROOMIE. Matcheamos estudiantes por hábitos y estilo de vida, con perfiles verificados. Mencionalo en el chat y resolvemos las dos cosas juntas.",
       },
       {
         q: "¿Y si no me gustan las opciones?",
-        a: "Pagás por un servicio, no por conformarte. Seguimos buscando hasta que las opciones realmente encajen — y si tu presupuesto y tus expectativas no dan, te lo decimos de frente en vez de empujarte a algo.",
+        a: "Pagás por un servicio, no por conformarte. Seguimos buscando hasta que las opciones realmente encajen, y si tu presupuesto y tus expectativas no dan, te lo decimos de frente en vez de empujarte a algo.",
       },
     ],
     cta: {
       h2: "Contanos qué necesitás. Del resto nos encargamos nosotros.",
-      body: "Con un mensaje alcanza para arrancar. Te hacemos unas preguntas y volvemos con un plan — sin compromiso.",
+      body: "Con un mensaje alcanza para arrancar. Te hacemos unas preguntas y volvemos con un plan, sin compromiso.",
       checks: ["Sin compromiso", "Respuesta en 24 h", "Equipo local"],
       ctaWa: "Escribinos por WhatsApp",
       ctaCall: "O agendá una llamada corta",
@@ -98,7 +98,7 @@ const dict = {
     hero: {
       badge: "Housing concierge for exchange students",
       h1: "Land in Montevideo with your housing already solved.",
-      body: "Finding a place from abroad is stressful: unfamiliar websites, contracts in Spanish, paying deposits for rooms you've never seen. ROOMIE is your team on the ground — we search, verify and book your housing so you arrive with keys, not doubts.",
+      body: "Finding a place from abroad is stressful: unfamiliar websites, contracts in Spanish, paying deposits for rooms you've never seen. ROOMIE is your team on the ground. We search, verify and book your housing so you arrive with keys, not doubts.",
       ctaWa: "WhatsApp us",
       ctaCall: "Or book a short call",
       note: "Reply within 24 hours · in English or Spanish",
@@ -110,7 +110,7 @@ const dict = {
       },
       {
         title: "Every option verified",
-        body: "We confirm the place exists, the owner is legitimate and the photos are real — before you ever send money.",
+        body: "We confirm the place exists, the owner is legitimate and the photos are real, before you ever send money.",
       },
       {
         title: "Handled end to end",
@@ -132,7 +132,7 @@ const dict = {
       {
         n: "03",
         title: "You choose, we book",
-        body: "Video tour of your favorites, then we negotiate and walk you through the reservation and contract — in your language.",
+        body: "Video tour of your favorites, then we negotiate and walk you through the reservation and contract in your language.",
       },
       {
         n: "04",
@@ -145,7 +145,7 @@ const dict = {
       "Personalized search based on your budget and dates",
       "Verification of every listing and owner",
       "Video tours so you see the real place before paying",
-      "Support with contract, deposit and payment — in English",
+      "Support with contract, deposit and payment",
       "Check-in coordination when you arrive",
       "A local WhatsApp contact during your first weeks",
     ],
@@ -153,24 +153,24 @@ const dict = {
     faqs: [
       {
         q: "How much does it cost?",
-        a: "It's a one-time service fee that depends on what you need. We quote it upfront in the first chat, before you commit to anything — no surprises, no percentage of your rent.",
+        a: "It's a one-time service fee that depends on what you need. We quote it upfront in the first chat, before you commit to anything. No surprises, no percentage of your rent.",
       },
       {
         q: "When should I start?",
-        a: "Ideally 4–8 weeks before you travel. The best student housing in Montevideo goes early each semester — but if you're arriving sooner, write anyway and we'll tell you honestly what's possible.",
+        a: "Ideally 4–8 weeks before you travel. The best student housing in Montevideo goes early each semester, but if you're arriving sooner, write anyway and we'll tell you honestly what's possible.",
       },
       {
         q: "Can you also find me a roommate?",
-        a: "Yes — that's the other half of ROOMIE. We match students by lifestyle and habits, with verified profiles. Mention it in the chat and we'll handle both together.",
+        a: "Yes, that's the other half of ROOMIE. We match students by lifestyle and habits, with verified profiles. Mention it in the chat and we'll handle both together.",
       },
       {
         q: "What if I don't like the options?",
-        a: "You pay to get a service, not to settle. We keep searching until the options genuinely fit — and we'll always tell you if your budget and expectations don't match, instead of pushing you into something.",
+        a: "You pay to get a service, not to settle. We keep searching until the options genuinely fit, and we'll always tell you if your budget and expectations don't match, instead of pushing you into something.",
       },
     ],
     cta: {
       h2: "Tell us what you need. We'll take it from there.",
-      body: "One message is enough to get started. We'll ask a few questions and come back with a plan — no commitment.",
+      body: "One message is enough to get started. We'll ask a few questions and come back with a plan, no commitment.",
       checks: ["No commitment", "English or Spanish", "Reply within 24 h"],
       ctaWa: "WhatsApp us",
       ctaCall: "Or book a short call",

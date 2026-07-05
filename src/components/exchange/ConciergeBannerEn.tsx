@@ -10,7 +10,7 @@ export default function ConciergeBannerEn() {
           </h2>
           <p className="text-[16px] text-ink-secondary leading-[1.6]">
             Beyond matching you with a roommate, the ROOMIE team searches,
-            verifies and books your housing for you — before you land in
+            verifies and books your housing for you, before you land in
             Montevideo.
           </p>
         </div>
