@@ -31,7 +31,7 @@ export default function Footer() {
           >
             For exchange students
           </Link>
-          <span className="text-sm text-ink-muted">roomie.com.uy</span>
+          <span className="text-sm text-ink-muted">roomieuy.com</span>
 
           <div className="flex items-center gap-[18px]">
             <a
