@@ -71,7 +71,11 @@ const dict = {
     faqs: [
       {
         q: "¿Cuánto cuesta?",
-        a: "Es un fee único de servicio que depende de lo que necesites. Te lo cotizamos de entrada, en la primera charla y antes de que te comprometas a nada. Sin sorpresas ni porcentaje del alquiler.",
+        a: "Es un fee único de servicio que depende de lo que necesites. Te lo cotizamos de entrada, en la primera charla, y lo pagás recién cuando tu vivienda está confirmada. Sin sorpresas ni porcentaje del alquiler.",
+      },
+      {
+        q: "¿Y si no me encuentran nada?",
+        a: "No pagás. Cobramos solo cuando confirmás tu vivienda: si no te conseguimos opciones que encajen con tu presupuesto y tus fechas, el servicio no te cuesta nada. Ese es nuestro incentivo para encontrarla.",
       },
       {
         q: "¿Cuándo conviene empezar?",
@@ -153,7 +157,11 @@ const dict = {
     faqs: [
       {
         q: "How much does it cost?",
-        a: "It's a one-time service fee that depends on what you need. We quote it upfront in the first chat, before you commit to anything. No surprises, no percentage of your rent.",
+        a: "It's a one-time service fee that depends on what you need. We quote it upfront in the first chat, and you only pay once your housing is confirmed. No surprises, no percentage of your rent.",
+      },
+      {
+        q: "What if you can't find me anything?",
+        a: "You don't pay. We only charge once your housing is confirmed — if we can't find options that fit your budget and dates, the service costs you nothing. That's our incentive to get it done.",
       },
       {
         q: "When should I start?",

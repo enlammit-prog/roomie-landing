@@ -14,10 +14,10 @@ const manrope = Manrope({
   variable: "--font-manrope",
 });
 
-const SITE_URL = "https://joinroomie.vercel.app";
-const OG_TITLE = "ROOMIE — Encontrá con quién vivir, sin jugártela a ciegas";
+const SITE_URL = "https://www.roomieuy.com";
+const OG_TITLE = "ROOMIE — Roommates y vivienda para estudiantes en Montevideo";
 const OG_DESCRIPTION =
-  "ROOMIE conecta estudiantes del interior y de intercambio con roommates verificados y compatibles en Montevideo.";
+  "ROOMIE conecta estudiantes del interior y de intercambio con roommates verificados y compatibles en Montevideo. Te conseguimos vivienda antes de llegar.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
