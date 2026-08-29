@@ -1,3 +1,5 @@
+import SectionEyebrow from "./SectionEyebrow";
+
 const features = [
   {
     n: "01",
@@ -30,12 +32,7 @@ export default function Solucion() {
   return (
     <section className="bg-bg-alt border-t border-b border-white/[0.06]">
       <div className="max-w-[1180px] mx-auto px-8 py-[110px]">
-        <div className="flex items-baseline gap-3.5 mb-[22px]">
-          <span className="font-sora font-bold text-sm text-accent-blue">02</span>
-          <span className="text-sm font-semibold text-ink-quaternary">
-            La solución
-          </span>
-        </div>
+        <SectionEyebrow number="02" label="La solución" className="mb-[22px]" />
         <h2 className="font-sora font-extrabold text-[32px] sm:text-[44px] tracking-[-0.025em] leading-[1.08] max-w-[720px] mb-4">
           Confianza, compatibilidad y seguridad, en un solo lugar.
         </h2>

@@ -1,3 +1,5 @@
+import SectionEyebrow from "./SectionEyebrow";
+
 const columns = [
   {
     title: "Estudiantes del interior",
@@ -16,12 +18,7 @@ export default function ParaQuienEs() {
       id="para-quien"
       className="max-w-[1180px] mx-auto px-8 py-[110px]"
     >
-      <div className="flex items-baseline gap-3.5 mb-[22px]">
-        <span className="font-sora font-bold text-sm text-accent-blue">04</span>
-        <span className="text-sm font-semibold text-ink-quaternary">
-          Para quién es
-        </span>
-      </div>
+      <SectionEyebrow number="04" label="Para quién es" className="mb-[22px]" />
       <h2 className="font-sora font-extrabold text-[32px] sm:text-[44px] tracking-[-0.025em] leading-[1.08] max-w-[600px] mb-4">
         Pensada para los que recién llegan a Montevideo.
       </h2>

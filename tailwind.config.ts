@@ -19,6 +19,8 @@ const config: Config = {
         match: "#10B981",
         "accent-blue": "#6E8BF5",
         "accent-violet": "#B79CF7",
+        "accent-violet-light": "#C4B2FB",
+        "accent-violet-mid": "#A78BFA",
         hairline: "rgba(255,255,255,0.07)",
       },
       fontFamily: {
@@ -43,10 +45,15 @@ const config: Config = {
           from: { transform: "rotate(0deg)" },
           to: { transform: "rotate(360deg)" },
         },
+        "pulse-soft": {
+          "0%, 100%": { opacity: "0.55" },
+          "50%": { opacity: "1" },
+        },
       },
       animation: {
-        float: "float 6s ease-in-out infinite",
+        float: "float 6.5s ease-in-out infinite",
         "spin-slow": "spin-slow 90s linear infinite",
+        "pulse-soft": "pulse-soft 2.4s ease-in-out infinite",
       },
     },
   },

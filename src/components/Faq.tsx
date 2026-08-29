@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import SectionEyebrow from "./SectionEyebrow";
 
 const faqs = [
   {
@@ -36,12 +37,7 @@ export default function Faq() {
   return (
     <section id="faq" className="bg-bg-alt border-t border-b border-white/[0.06]">
       <div className="max-w-[1180px] mx-auto px-8 py-[110px]">
-        <div className="flex items-baseline gap-3.5 mb-[22px]">
-          <span className="font-sora font-bold text-sm text-accent-blue">05</span>
-          <span className="text-sm font-semibold text-ink-quaternary">
-            Preguntas frecuentes
-          </span>
-        </div>
+        <SectionEyebrow number="05" label="Preguntas frecuentes" className="mb-[22px]" />
         <h2 className="font-sora font-extrabold text-[32px] sm:text-[44px] tracking-[-0.025em] leading-[1.08] max-w-[600px] mb-12">
           Lo que solés preguntarte antes de empezar.
         </h2>

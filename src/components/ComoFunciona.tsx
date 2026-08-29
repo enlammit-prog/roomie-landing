@@ -1,3 +1,5 @@
+import SectionEyebrow from "./SectionEyebrow";
+
 const steps = [
   {
     n: "1",
@@ -29,12 +31,7 @@ const steps = [
 export default function ComoFunciona() {
   return (
     <section id="como" className="max-w-[1180px] mx-auto px-8 py-[110px]">
-      <div className="flex items-baseline gap-3.5 mb-[22px]">
-        <span className="font-sora font-bold text-sm text-accent-blue">03</span>
-        <span className="text-sm font-semibold text-ink-quaternary">
-          Cómo funciona
-        </span>
-      </div>
+      <SectionEyebrow number="03" label="Cómo funciona" className="mb-[22px]" />
       <h2 className="font-sora font-extrabold text-[32px] sm:text-[44px] tracking-[-0.025em] leading-[1.08] max-w-[560px] mb-16">
         De crear tu perfil a mudarte, en cinco pasos.
       </h2>

@@ -1,5 +1,6 @@
 import HorarioCard from "./HorarioCard";
 import { BOOKING_URL } from "@/lib/links";
+import SectionEyebrow from "./SectionEyebrow";
 
 export default function Hablemos() {
   return (
@@ -8,14 +9,7 @@ export default function Hablemos() {
       className="max-w-[1180px] mx-auto px-8 py-[110px] grid grid-cols-1 lg:grid-cols-[1.08fr_0.92fr] gap-14 items-center"
     >
       <div>
-        <div className="flex items-baseline gap-3.5 mb-[22px]">
-          <span className="font-sora font-bold text-sm text-accent-blue">
-            06
-          </span>
-          <span className="text-sm font-semibold text-ink-quaternary">
-            Hablemos
-          </span>
-        </div>
+        <SectionEyebrow number="06" label="Hablemos" className="mb-[22px]" />
         <h2 className="font-sora font-extrabold text-[32px] sm:text-[44px] tracking-[-0.025em] leading-[1.08] max-w-[600px] mb-4">
           ¿Querés contarnos tu caso o sumarte como universidad?
         </h2>

@@ -1,3 +1,5 @@
+import SectionEyebrow from "./SectionEyebrow";
+
 const items = [
   {
     title: "Grupos llenos de desconocidos",
@@ -16,10 +18,7 @@ const items = [
 export default function Problema() {
   return (
     <section id="problema" className="max-w-[1180px] mx-auto px-8 py-[110px]">
-      <div className="flex items-baseline gap-3.5 mb-[22px]">
-        <span className="font-sora font-bold text-sm text-accent-blue">01</span>
-        <span className="text-sm font-semibold text-ink-quaternary">El problema</span>
-      </div>
+      <SectionEyebrow number="01" label="El problema" className="mb-[22px]" />
       <h2 className="font-sora font-extrabold text-[32px] sm:text-[44px] tracking-[-0.025em] leading-[1.08] max-w-[660px] mb-4">
         Buscar roommate hoy es un caos.
       </h2>
