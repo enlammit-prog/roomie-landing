@@ -1,6 +1,6 @@
 # ROOMIE Landing Page — Handoff
 
-> Estado al 3 de julio de 2026. En producción en [joinroomie.vercel.app](https://joinroomie.vercel.app). El dominio propio www.roomie.com.uy está en migración (ver Pendientes).
+> Estado al 29 de agosto de 2026. En producción en **[www.roomieuy.com](https://www.roomieuy.com)** (dominio propio, comprado en Namecheap, ya apuntando a Vercel vía nameservers `ns1/ns2.vercel-dns.com`). También accesible en [joinroomie.vercel.app](https://joinroomie.vercel.app) y roomie-landing-sepia.vercel.app: los tres dominios sirven el mismo proyecto y se actualizan juntos con cada push.
 
 ---
 
@@ -121,19 +121,11 @@ Credenciales de push: usuario `enlammit-prog` + token personal de GitHub como co
 
 ---
 
-## Dominio roomie.com.uy — estado de la migración
+## Dominios
 
-- Los dominios `roomie.com.uy` (redirect 307 a www) y `www.roomie.com.uy` ya están agregados al proyecto Vercel correcto (**roomie-landing**; se movieron desde el proyecto viejo roomie-landing-mxrz).
-- **Falta**: cargar estos registros en el panel DNS de Antel / nic.com.uy (hoy `www` apunta a una IP vieja de Antel, 190.64.98.104):
+**El dominio en uso es `roomieuy.com`** (Namecheap), ya funcionando con HTTPS. Sus nameservers apuntan a Vercel, así que el DNS se administra desde el propio panel de Vercel, no desde Namecheap.
 
-| Tipo | Nombre | Valor |
-|---|---|---|
-| A | `@` | `216.198.79.1` |
-| CNAME | `www` | `d6b70eb46633b302.vercel-dns-017.com.` |
-
-- Después: Vercel → Domains → **Refresh** en cada dominio hasta que diga "Valid Configuration".
-- Antes de tocar nameservers: verificar que no haya casillas de mail @roomie.com.uy en Antel (cambiar solo registros no las afecta; cambiar nameservers sí).
-- Alternativa si no se encuentra el panel: llamar al 0800 de Antel y dictar la tabla.
+`roomie.com.uy` (registrado en Antel/nic.com.uy) quedó agregado al proyecto pero **sin configurar** y no se usa. Aparece como "Invalid Configuration" en Vercel → Domains. Opciones: quitarlo del proyecto, o cargar en el panel DNS de Antel un registro A `@` → `216.198.79.1` y un CNAME `www` → `d6b70eb46633b302.vercel-dns-017.com.` si se lo quiere usar como redirect.
 
 ---
 
@@ -156,10 +148,26 @@ Credenciales de push: usuario `enlammit-prog` + token personal de GitHub como co
 
 ---
 
+## Diseño v2 (aplicado el 29 ago 2026)
+
+Del handoff `design_handoff_roomie_landing` se aplicó el rediseño del hero:
+
+- Foto `public/hero_night.jpg` en la home y `public/hero_roomie.jpg` en /exchange, ambas con halo navy, overlay azul y chip de perfiles verificados
+- Cinco capas de fondo en el hero de la home: degradado atardecer, banda cálida de horizonte, scrim de legibilidad, glow radial violeta y órbita girando
+- H1 a 74px con la segunda línea en gradiente de texto (`#6E8BF5 → #A78BFA → #C4B2FB`)
+- Fila de tres métricas: 65% / 100% / 15 min
+- `MatchCard` reconstruida: borde en gradiente, ring con gradiente de marca, tres barras de compatibilidad, preview de chat y botón "Responder mensaje"
+- `SectionEyebrow.tsx`: eyebrow como pill con borde, usado en las seis secciones
+
+**Del handoff se descartó a propósito** (traía datos desactualizados): el modal de videollamada, `contacto@roomie.com.uy`, los horarios 18:00-21:00, "Uruguay 2025" en el footer y la ausencia del Concierge.
+
+---
+
 ## Pendientes
 
-- [ ] Cargar los registros DNS en Antel/nic.com.uy y verificar en Vercel (tabla arriba)
-- [ ] Difundir joinroomie.vercel.app/concierge en Instagram (bio + historias)
+- [ ] Decidir qué hacer con roomie.com.uy: quitarlo de Vercel o configurarlo como redirect
+- [ ] Difundir www.roomieuy.com/concierge en Instagram (bio + historias)
 - [ ] Probar el flujo completo de WhatsApp desde un celular real
+- [ ] Configurar identidad de git: `git config --global user.name` y `user.email`
 - [ ] Cuando lance la app: actualizar los textos de "estamos validando"
-- [ ] Re-verificar OG en LinkedIn Post Inspector tras los últimos cambios de texto
+- [ ] Re-verificar OG en LinkedIn Post Inspector; `metadataBase` en layout.tsx todavía dice joinroomie.vercel.app, conviene cambiarlo a https://www.roomieuy.com
