@@ -15,15 +15,15 @@ const manrope = Manrope({
 });
 
 const SITE_URL = "https://www.roomieuy.com";
-const OG_TITLE = "ROOMIE — Roommates y vivienda para estudiantes en Montevideo";
+const OG_TITLE =
+  "ROOMIE — La app de roommates para estudiantes en Montevideo. Próximamente.";
 const OG_DESCRIPTION =
-  "ROOMIE conecta estudiantes del interior y de intercambio con roommates verificados y compatibles en Montevideo. Te conseguimos vivienda antes de llegar.";
+  "Estamos construyendo la forma más segura de encontrar roommate en Montevideo: perfiles verificados y compatibles para estudiantes del interior y de intercambio. Sumate a la lista de espera y enterate cuando lancemos.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: OG_TITLE,
-  description:
-    "ROOMIE conecta estudiantes que llegan del interior de Uruguay a Montevideo con compañeros de cuarto verificados y compatibles.",
+  description: OG_DESCRIPTION,
   icons: {
     icon: "/roomie_profile.png",
   },

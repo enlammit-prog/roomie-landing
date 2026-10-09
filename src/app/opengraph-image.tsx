@@ -1,7 +1,8 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "ROOMIE — Encontrá con quién vivir, sin jugártela a ciegas";
+export const alt =
+  "ROOMIE — La app de roommates para estudiantes en Montevideo. Próximamente.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -63,7 +64,7 @@ export default async function OpengraphImage() {
               }}
             />
             <div style={{ fontSize: 22, color: "#A6B2CC", fontWeight: 500 }}>
-              Para estudiantes que llegan del interior a Montevideo
+              En construcción · etapa inicial
             </div>
           </div>
 
@@ -77,7 +78,7 @@ export default async function OpengraphImage() {
               maxWidth: 980,
             }}
           >
-            Encontrá con quién vivir, sin jugártela a ciegas.
+            La forma más segura de encontrar roommate en Montevideo.
           </div>
 
           <div
@@ -88,8 +89,8 @@ export default async function OpengraphImage() {
               maxWidth: 820,
             }}
           >
-            ROOMIE conecta estudiantes del interior y de intercambio con
-            roommates verificados y compatibles en Montevideo.
+            La estamos construyendo: perfiles verificados y compatibles para
+            estudiantes del interior y de intercambio.
           </div>
         </div>
 

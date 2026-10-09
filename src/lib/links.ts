@@ -15,3 +15,7 @@ export const WHATSAPP_NUMBER =
 export function whatsappUrl(message: string) {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 }
+
+// Mensaje pre-armado para quien llega este año y necesita vivienda ya.
+export const WA_MSG_VIVIENDA_ES =
+  "¡Hola ROOMIE! Llego a Montevideo a estudiar y me gustaría que me ayuden a conseguir dónde vivir.";

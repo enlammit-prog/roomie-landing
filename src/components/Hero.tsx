@@ -1,13 +1,15 @@
 import Image from "next/image";
-import Link from "next/link";
 import Orbit from "./Orbit";
 import MatchCard from "./MatchCard";
-import { GOOGLE_FORM_URL } from "@/lib/links";
+import {
+  GOOGLE_FORM_URL,
+  whatsappUrl,
+  WA_MSG_VIVIENDA_ES,
+} from "@/lib/links";
 
 const METRICS = [
-  { value: "65%", label: "de los encuestados\nya quiere usarlo" },
-  { value: "100%", label: "de los perfiles con\nidentidad validada" },
-  { value: "15 min", label: "para hablar con el\nequipo, gratis" },
+  { value: "65%", label: "de los 15 estudiantes que\nencuestamos lo usaría" },
+  { value: "15 min", label: "lo que dura una\nllamada con el equipo" },
 ];
 
 export default function Hero() {
@@ -54,15 +56,14 @@ export default function Hero() {
 
       <div className="relative z-[2] max-w-[1180px] mx-auto px-4 sm:px-8 pt-[84px] pb-24 grid grid-cols-1 lg:grid-cols-[1.04fr_0.96fr] gap-14 lg:gap-[60px] items-center">
         <div>
-          <div className="inline-flex items-center gap-2.5 px-[13px] py-1.5 rounded-full bg-violet/10 border border-violet/[0.42] mb-7">
-            <span className="w-[7px] h-[7px] rounded-full bg-match motion-safe:animate-pulse-soft" />
+          <div className="inline-flex items-center gap-2 px-[13px] py-1.5 rounded-full bg-violet/10 border border-violet/[0.42] mb-7">
             <span className="text-[11px] sm:text-xs font-bold tracking-[0.12em] uppercase text-accent-violet-light">
-              Roommates verificados en Montevideo
+              🚧 En construcción — etapa inicial
             </span>
           </div>
 
-          <h1 className="font-sora font-extrabold text-[38px] sm:text-[56px] lg:text-[74px] leading-[1.04] sm:leading-[0.96] tracking-[-0.042em] mb-6 text-balance">
-            Encontrá con quién vivir,
+          <h1 className="font-sora font-extrabold text-[34px] sm:text-[46px] lg:text-[58px] leading-[1.06] sm:leading-[1.02] tracking-[-0.038em] mb-6 text-balance">
+            La forma más segura de encontrar roommate en Montevideo.
             <span
               className="block bg-clip-text text-transparent"
               style={{
@@ -70,24 +71,25 @@ export default function Hero() {
                   "linear-gradient(96deg, #6E8BF5 8%, #A78BFA 58%, #C4B2FB)",
               }}
             >
-              sin jugártela a ciegas.
+              La estamos construyendo.
             </span>
           </h1>
 
-          <p className="text-[17px] sm:text-[18.5px] leading-[1.6] text-ink-secondary max-w-[490px] mb-9 text-pretty">
-            ROOMIE conecta estudiantes con compañeros de cuarto verificados y
-            compatibles. Identidad real, hábitos que encajan, cero grupos de
-            Facebook llenos de desconocidos.
+          <p className="text-[17px] sm:text-[18.5px] leading-[1.6] text-ink-secondary max-w-[520px] mb-9 text-pretty">
+            ROOMIE conecta estudiantes del interior de Uruguay y estudiantes de
+            intercambio con compañeros de cuarto verificados y compatibles. Si
+            llegas a Montevideo a estudiar y necesitas con quién vivir, esto es
+            para ti.
           </p>
 
-          <div className="flex gap-3.5 flex-wrap mb-6">
+          <div className="flex gap-3.5 flex-wrap mb-9">
             <a
               href={GOOGLE_FORM_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2.5 bg-gradient-to-r from-blue to-violet text-white no-underline text-base font-bold px-7 py-[18px] rounded-btn shadow-[0_20px_46px_-18px_rgba(124,58,237,0.95),inset_0_1px_0_rgba(255,255,255,0.22)] hover:-translate-y-[3px] hover:shadow-[0_28px_60px_-18px_rgba(124,58,237,1)] transition-all duration-[180ms]"
             >
-              Sumate a la lista
+              Quiero que me avisen cuando lancemos
               <svg
                 width="17"
                 height="17"
@@ -104,22 +106,27 @@ export default function Hero() {
               </svg>
             </a>
             <a
-              href="#como"
-              className="bg-white/[0.03] backdrop-blur-[8px] border border-white/[0.16] text-ink no-underline text-base font-semibold px-7 py-[18px] rounded-btn hover:border-white/[0.34] hover:bg-white/[0.07] transition-colors"
+              href={whatsappUrl(WA_MSG_VIVIENDA_ES)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2.5 bg-white/[0.03] backdrop-blur-[8px] border border-white/[0.16] text-ink no-underline text-base font-semibold px-7 py-[18px] rounded-btn hover:border-white/[0.34] hover:bg-white/[0.07] transition-colors"
             >
-              Ver cómo funciona
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#10B981"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z" />
+              </svg>
+              Llego este año y necesito vivienda
             </a>
           </div>
-
-          <p className="text-[15px] text-ink-secondary mb-9">
-            ¿Llegás a Montevideo y necesitás vivienda?{" "}
-            <Link
-              href="/concierge"
-              className="text-accent-violet font-semibold no-underline hover:text-ink transition-colors"
-            >
-              Te la conseguimos nosotros →
-            </Link>
-          </p>
 
           <div className="flex flex-wrap items-start gap-y-6 pt-[26px] border-t border-white/[0.08]">
             {METRICS.map((metric, i) => (

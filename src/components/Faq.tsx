@@ -27,7 +27,7 @@ const faqs = [
   {
     question: "¿Cuándo lanzan?",
     answer:
-      "Estamos terminando de validar la app con estudiantes reales. Dejanos tu mail en la lista de espera y sos de los primeros en enterarte apenas abramos.",
+      "Estamos en etapa de desarrollo. Si te sumás a la lista de espera, sos de los primeros en enterarte cuando abramos el acceso.",
   },
 ];
 

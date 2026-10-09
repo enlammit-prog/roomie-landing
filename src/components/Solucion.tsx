@@ -36,9 +36,13 @@ export default function Solucion() {
         <h2 className="font-sora font-extrabold text-[32px] sm:text-[44px] tracking-[-0.025em] leading-[1.08] max-w-[720px] mb-4">
           Confianza, compatibilidad y seguridad, en un solo lugar.
         </h2>
-        <p className="text-[17.5px] text-ink-secondary max-w-[600px] mb-[60px] leading-[1.6]">
+        <p className="text-[17.5px] text-ink-secondary max-w-[600px] mb-[44px] leading-[1.6]">
           Cada perfil pasa por una verificación real antes de poder chatear.
           Esto es lo que nos hace distintos.
+        </p>
+
+        <p className="text-[14px] font-bold tracking-[0.04em] text-[#7C3AED] mb-6">
+          Esto es lo que estamos construyendo:
         </p>
 
         <div className="flex flex-col">

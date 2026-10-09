@@ -50,6 +50,27 @@ export default function MatchCard({ matchScore = 94 }: MatchCardProps) {
             "linear-gradient(165deg, rgba(24,34,64,0.78), rgba(13,20,38,0.9))",
         }}
       >
+        <div className="flex items-center gap-1.5 px-2.5 py-1.5 mb-3.5 rounded-chip bg-white/[0.05] border border-white/[0.12]">
+          <svg
+            width="11"
+            height="11"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="text-ink-quaternary"
+            aria-hidden="true"
+          >
+            <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z" />
+            <circle cx="12" cy="12" r="3" />
+          </svg>
+          <span className="text-[9.5px] font-bold tracking-[0.1em] text-ink-quaternary">
+            VISTA PREVIA · EN DISEÑO
+          </span>
+        </div>
+
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center gap-1.5">
             <span className="font-sora text-[11px] font-bold tracking-[0.14em] text-[#7C8AA8]">

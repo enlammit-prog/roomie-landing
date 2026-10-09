@@ -1,5 +1,7 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
+import DosPuertas from "@/components/DosPuertas";
+import PorQue from "@/components/PorQue";
 import Problema from "@/components/Problema";
 import Solucion from "@/components/Solucion";
 import ComoFunciona from "@/components/ComoFunciona";
@@ -15,6 +17,8 @@ export default function Home() {
     <>
       <Nav />
       <Hero />
+      <DosPuertas />
+      <PorQue />
       <Problema />
       <Solucion />
       <ConciergeBanner />
