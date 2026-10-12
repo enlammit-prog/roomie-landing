@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import LangSwitcher from "../LangSwitcher";
 import { whatsappUrl } from "@/lib/links";
 
 const WA_MSG = {
@@ -8,8 +9,8 @@ const WA_MSG = {
 };
 
 const LABELS = {
-  es: { switch: "EN", switchHref: "/concierge/en", cta: "Escribinos por WhatsApp" },
-  en: { switch: "ES", switchHref: "/concierge", cta: "WhatsApp us" },
+  es: { cta: "Escribinos por WhatsApp" },
+  en: { cta: "WhatsApp us" },
 };
 
 export default function ConciergeNav({ lang }: { lang: "es" | "en" }) {
@@ -34,12 +35,11 @@ export default function ConciergeNav({ lang }: { lang: "es" | "en" }) {
         </Link>
 
         <div className="flex items-center gap-4 md:gap-6">
-          <Link
-            href={l.switchHref}
-            className="text-[#9AA7C2] no-underline text-[14.5px] font-medium"
-          >
-            {l.switch}
-          </Link>
+          <LangSwitcher
+            current={lang}
+            esHref="/concierge"
+            enHref="/concierge/en"
+          />
           <a
             href={whatsappUrl(WA_MSG[lang])}
             target="_blank"

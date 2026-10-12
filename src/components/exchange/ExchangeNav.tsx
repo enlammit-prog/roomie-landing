@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import LangSwitcher from "../LangSwitcher";
 import { BOOKING_URL } from "@/lib/links";
 
 export default function ExchangeNav() {
@@ -22,12 +23,7 @@ export default function ExchangeNav() {
           </span>
         </Link>
         <div className="flex items-center gap-4 md:gap-6">
-          <Link
-            href="/"
-            className="text-[#9AA7C2] no-underline text-[14.5px] font-medium"
-          >
-            ES
-          </Link>
+          <LangSwitcher current="en" esHref="/" enHref="/exchange" />
           <Link
             href="/concierge/en"
             className="hidden sm:inline-block border border-amber-deep/50 text-ink no-underline text-[14.5px] font-semibold px-4 py-[9px] rounded-btn whitespace-nowrap hover:border-amber hover:text-amber transition-colors"

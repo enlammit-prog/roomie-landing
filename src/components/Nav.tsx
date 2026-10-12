@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import LangSwitcher from "./LangSwitcher";
 import { GOOGLE_FORM_URL } from "@/lib/links";
 
 const LINKS = [
@@ -44,12 +45,7 @@ export default function Nav() {
               {link.label}
             </a>
           ))}
-          <Link
-            href="/exchange"
-            className="text-[#9AA7C2] no-underline text-[14.5px] font-medium whitespace-nowrap hover:text-ink transition-colors"
-          >
-            English
-          </Link>
+          <LangSwitcher current="es" esHref="/" enHref="/exchange" />
           <a
             href={GOOGLE_FORM_URL}
             target="_blank"
@@ -122,13 +118,26 @@ export default function Nav() {
           >
             Necesito vivienda ahora
           </Link>
-          <Link
-            href="/exchange"
-            onClick={() => setOpen(false)}
-            className="text-[#C7D0E4] no-underline text-[15px] font-medium"
-          >
-            English
-          </Link>
+          <div className="pt-4 mt-1 border-t border-white/[0.1]">
+            <p className="text-[12px] font-bold tracking-[0.12em] uppercase text-ink-quaternary mb-3">
+              Idioma
+            </p>
+            <div className="flex flex-col gap-3">
+              <span
+                aria-current="true"
+                className="text-amber text-[15px] font-semibold"
+              >
+                Español
+              </span>
+              <Link
+                href="/exchange"
+                onClick={() => setOpen(false)}
+                className="text-[#C7D0E4] no-underline text-[15px] font-medium"
+              >
+                English
+              </Link>
+            </div>
+          </div>
         </div>
       )}
     </header>
