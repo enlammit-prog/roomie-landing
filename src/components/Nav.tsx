@@ -7,8 +7,8 @@ import { GOOGLE_FORM_URL } from "@/lib/links";
 
 const LINKS = [
   { href: "#problema", label: "El problema" },
-  { href: "#como", label: "Cómo funciona" },
-  { href: "#para-quien", label: "Para quién es" },
+  { href: "#nosotros", label: "Quiénes somos" },
+  { href: "#construimos", label: "Qué construimos" },
   { href: "#faq", label: "Preguntas" },
 ];
 
@@ -16,53 +16,47 @@ export default function Nav() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-[rgba(11,17,36,0.72)] backdrop-blur-[14px] border-b border-hairline">
-      <nav className="max-w-[1180px] mx-auto px-4 sm:px-8 py-[18px] flex items-center justify-between gap-3">
+    <header className="sticky top-0 z-50 bg-[rgba(15,23,42,0.86)] backdrop-blur-[10px] border-b border-hairline">
+      <nav className="max-w-[1320px] mx-auto px-4 sm:px-8 h-[68px] flex items-center justify-between gap-4">
         <a
           href="#top"
-          className="flex items-center gap-2.5 sm:gap-3 no-underline shrink-0"
+          className="flex items-center gap-2.5 no-underline shrink-0"
         >
           <Image
             src="/roomie_profile.png"
             alt="ROOMIE"
-            width={38}
-            height={38}
-            className="rounded-full block w-8 h-8 sm:w-[38px] sm:h-[38px]"
+            width={32}
+            height={32}
+            className="rounded-full block w-7 h-7 sm:w-8 sm:h-8"
           />
-          <span className="font-sora font-bold text-base sm:text-[19px] tracking-[0.13em] text-ink">
+          <span className="font-sora font-bold text-[15px] sm:text-[17px] tracking-[0.15em] text-ink">
             ROOMIE
           </span>
         </a>
 
-        <div className="hidden lg:flex items-center gap-7">
+        <div className="hidden lg:flex items-center gap-[30px]">
           {LINKS.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-[#9AA7C2] no-underline text-[14.5px] font-medium"
+              className="text-[#9AA7C2] no-underline text-[14.5px] font-medium whitespace-nowrap hover:text-ink transition-colors"
             >
               {link.label}
             </a>
           ))}
           <Link
             href="/exchange"
-            className="text-[#9AA7C2] no-underline text-[14.5px] font-medium whitespace-nowrap"
+            className="text-[#9AA7C2] no-underline text-[14.5px] font-medium whitespace-nowrap hover:text-ink transition-colors"
           >
-            For exchange students
-          </Link>
-          <Link
-            href="/concierge"
-            className="border border-violet/50 text-ink no-underline text-[14.5px] font-semibold px-5 py-[10px] rounded-btn whitespace-nowrap hover:border-violet hover:bg-violet/[0.08] transition-colors"
-          >
-            Te conseguimos vivienda
+            English
           </Link>
           <a
             href={GOOGLE_FORM_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gradient-to-r from-blue to-violet text-white no-underline text-[14.5px] font-semibold px-5 py-[11px] rounded-btn whitespace-nowrap"
+            className="bg-amber-deep text-amber-ink no-underline text-[14.5px] font-bold px-[18px] py-2.5 rounded-btn whitespace-nowrap hover:bg-amber transition-colors"
           >
-            Sumate a la lista
+            Avisame cuando lancen
           </a>
         </div>
 
@@ -71,16 +65,16 @@ export default function Nav() {
             href={GOOGLE_FORM_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gradient-to-r from-blue to-violet text-white no-underline text-[13px] font-semibold px-4 py-2.5 rounded-btn whitespace-nowrap"
+            className="bg-amber-deep text-amber-ink no-underline text-[13px] font-bold px-3.5 py-2 rounded-btn whitespace-nowrap"
           >
-            Sumate a la lista
+            Avisame
           </a>
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
             aria-label={open ? "Cerrar menú" : "Abrir menú"}
             aria-expanded={open}
-            className="w-9 h-9 flex items-center justify-center rounded-[8px] border border-white/[0.12] bg-white/[0.04] text-ink shrink-0"
+            className="w-9 h-9 flex items-center justify-center rounded-btn border border-white/[0.14] bg-white/[0.04] text-ink shrink-0"
           >
             <svg
               width="18"
@@ -110,14 +104,7 @@ export default function Nav() {
       </nav>
 
       {open && (
-        <div className="lg:hidden border-t border-hairline px-4 sm:px-8 py-5 flex flex-col gap-4 bg-[#0B1124]">
-          <Link
-            href="/concierge"
-            onClick={() => setOpen(false)}
-            className="border border-violet/50 text-ink no-underline text-[15px] font-semibold px-5 py-3 rounded-btn text-center"
-          >
-            Te conseguimos vivienda
-          </Link>
+        <div className="lg:hidden border-t border-hairline px-4 sm:px-8 py-5 flex flex-col gap-4 bg-[#0F172A]">
           {LINKS.map((link) => (
             <a
               key={link.href}
@@ -129,11 +116,18 @@ export default function Nav() {
             </a>
           ))}
           <Link
+            href="/concierge"
+            onClick={() => setOpen(false)}
+            className="text-amber no-underline text-[15px] font-semibold"
+          >
+            Necesito vivienda ahora
+          </Link>
+          <Link
             href="/exchange"
             onClick={() => setOpen(false)}
             className="text-[#C7D0E4] no-underline text-[15px] font-medium"
           >
-            For exchange students
+            English
           </Link>
         </div>
       )}

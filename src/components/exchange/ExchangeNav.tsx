@@ -30,7 +30,7 @@ export default function ExchangeNav() {
           </Link>
           <Link
             href="/concierge/en"
-            className="hidden sm:inline-block border border-violet/50 text-ink no-underline text-[14.5px] font-semibold px-4 py-[9px] rounded-btn whitespace-nowrap hover:border-violet hover:bg-violet/[0.08] transition-colors"
+            className="hidden sm:inline-block border border-amber-deep/50 text-ink no-underline text-[14.5px] font-semibold px-4 py-[9px] rounded-btn whitespace-nowrap hover:border-amber hover:text-amber transition-colors"
           >
             Need a place to live?
           </Link>
@@ -38,7 +38,7 @@ export default function ExchangeNav() {
             href={BOOKING_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gradient-to-r from-blue to-violet text-white no-underline text-[13px] sm:text-[14.5px] font-semibold px-4 sm:px-5 py-2.5 sm:py-[11px] rounded-btn whitespace-nowrap"
+            className="bg-amber-deep text-amber-ink no-underline text-[13px] sm:text-[14.5px] font-bold px-4 sm:px-[18px] py-2.5 rounded-btn whitespace-nowrap hover:bg-amber transition-colors"
           >
             Book a call
           </a>

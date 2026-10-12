@@ -1,98 +1,45 @@
 import Image from "next/image";
-import Orbit from "./Orbit";
-import MatchCard from "./MatchCard";
-import {
-  GOOGLE_FORM_URL,
-  whatsappUrl,
-  WA_MSG_VIVIENDA_ES,
-} from "@/lib/links";
-
-const METRICS = [
-  { value: "65%", label: "de los 15 estudiantes que\nencuestamos lo usaría" },
-  { value: "15 min", label: "lo que dura una\nllamada con el equipo" },
-];
+import Link from "next/link";
+import { GOOGLE_FORM_URL, whatsappUrl, WA_MSG_VIVIENDA_ES } from "@/lib/links";
 
 export default function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden">
-      {/* Capa 1: degradado atardecer */}
+    <section id="top" className="relative overflow-hidden bg-bg">
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "linear-gradient(178deg, #1A1E4A 0%, #241C52 32%, #3A2456 54%, #4A2A4E 66%, #2A2242 78%, #0B1124 100%)",
+            "radial-gradient(ellipse 60% 55% at 72% 34%, rgba(232,129,74,0.20), rgba(15,23,42,0) 70%)",
         }}
       />
-      {/* Capa 2: banda cálida de horizonte */}
-      <div
-        className="absolute left-0 right-0 pointer-events-none blur-[2px]"
-        style={{
-          bottom: "26%",
-          height: "220px",
-          background:
-            "linear-gradient(180deg, rgba(15,23,42,0) 0%, rgba(255,170,110,0.16) 62%, rgba(255,140,90,0.22) 78%, rgba(30,26,58,0.4) 100%)",
-        }}
-      />
-      {/* Capa 3: scrim de legibilidad */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          background:
-            "linear-gradient(180deg, rgba(15,23,42,0.58) 0%, rgba(15,23,42,0.66) 42%, rgba(15,23,42,0.86) 76%, #0B1124 100%)",
-        }}
-      />
-      {/* Capa 4: glow radial violeta */}
-      <div
-        className="absolute pointer-events-none -top-[180px] left-1/2 -translate-x-1/2 w-[1100px] h-[620px]"
-        style={{
-          background:
-            "radial-gradient(ellipse at center, rgba(124,58,237,0.34), rgba(29,78,216,0.14) 45%, rgba(15,23,42,0) 72%)",
-        }}
-      />
-      {/* Capa 5: círculos concéntricos */}
-      <div className="absolute -top-[160px] -right-[220px] w-[660px] h-[660px] pointer-events-none opacity-[0.42] hidden md:block motion-safe:animate-spin-slow">
-        <Orbit stroke="grad" gradientId="orbit-hero" />
-      </div>
 
-      <div className="relative z-[2] max-w-[1180px] mx-auto px-4 sm:px-8 pt-[84px] pb-24 grid grid-cols-1 lg:grid-cols-[1.04fr_0.96fr] gap-14 lg:gap-[60px] items-center">
-        <div>
-          <div className="inline-flex items-center gap-2 px-[13px] py-1.5 rounded-full bg-violet/10 border border-violet/[0.42] mb-7">
-            <span className="text-[11px] sm:text-xs font-bold tracking-[0.12em] uppercase text-accent-violet-light">
-              🚧 En construcción — etapa inicial
-            </span>
-          </div>
-
-          <h1 className="font-sora font-extrabold text-[34px] sm:text-[46px] lg:text-[58px] leading-[1.06] sm:leading-[1.02] tracking-[-0.038em] mb-6 text-balance">
-            La forma más segura de encontrar roommate en Montevideo.
-            <span
-              className="block bg-clip-text text-transparent"
-              style={{
-                backgroundImage:
-                  "linear-gradient(96deg, #6E8BF5 8%, #A78BFA 58%, #C4B2FB)",
-              }}
-            >
-              La estamos construyendo.
-            </span>
-          </h1>
-
-          <p className="text-[17px] sm:text-[18.5px] leading-[1.6] text-ink-secondary max-w-[520px] mb-9 text-pretty">
-            ROOMIE conecta estudiantes del interior de Uruguay y estudiantes de
-            intercambio con compañeros de cuarto verificados y compatibles. Si
-            llegas a Montevideo a estudiar y necesitas con quién vivir, esto es
-            para ti.
+      <div className="relative z-[2] max-w-[1320px] mx-auto flex flex-col lg:flex-row lg:items-stretch">
+        <div className="w-full lg:w-[54%] shrink-0 px-4 sm:px-8 pt-16 lg:pt-[92px] pb-10 lg:pb-[92px]">
+          <p className="text-[12px] sm:text-[13px] font-bold tracking-[0.16em] uppercase text-amber mb-5">
+            Lo estamos construyendo
           </p>
 
-          <div className="flex gap-3.5 flex-wrap mb-9">
+          <h1 className="font-sora font-extrabold text-[40px] sm:text-[56px] lg:text-[62px] leading-[1.04] lg:leading-[1.02] tracking-[-0.042em] mb-6 max-w-[700px] text-balance">
+            Encontrá con quién vivir en{" "}
+            <span className="text-amber">Montevideo</span>.
+          </h1>
+
+          <p className="text-[17px] sm:text-[19px] leading-[1.55] text-ink-secondary max-w-[500px] mb-10 text-pretty">
+            Para estudiantes que llegan del interior o de intercambio. Perfiles
+            verificados, no desconocidos de Facebook.
+          </p>
+
+          <div className="flex flex-col sm:flex-row sm:items-center gap-5 sm:gap-7">
             <a
               href={GOOGLE_FORM_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2.5 bg-gradient-to-r from-blue to-violet text-white no-underline text-base font-bold px-7 py-[18px] rounded-btn shadow-[0_20px_46px_-18px_rgba(124,58,237,0.95),inset_0_1px_0_rgba(255,255,255,0.22)] hover:-translate-y-[3px] hover:shadow-[0_28px_60px_-18px_rgba(124,58,237,1)] transition-all duration-[180ms]"
+              className="inline-flex items-center justify-center gap-2.5 bg-amber-deep text-amber-ink no-underline text-base font-bold px-[26px] py-4 rounded-btn hover:bg-amber active:translate-y-px transition-colors"
             >
-              Quiero que me avisen cuando lancemos
+              Avisame cuando lancen
               <svg
-                width="17"
-                height="17"
+                width="16"
+                height="16"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -109,11 +56,11 @@ export default function Hero() {
               href={whatsappUrl(WA_MSG_VIVIENDA_ES)}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2.5 bg-white/[0.03] backdrop-blur-[8px] border border-white/[0.16] text-ink no-underline text-base font-semibold px-7 py-[18px] rounded-btn hover:border-white/[0.34] hover:bg-white/[0.07] transition-colors"
+              className="inline-flex items-center gap-2 self-start text-ink no-underline text-base font-semibold border-b border-white/30 pb-[3px] hover:border-amber hover:text-amber transition-colors"
             >
               <svg
-                width="18"
-                height="18"
+                width="17"
+                height="17"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="#10B981"
@@ -124,76 +71,40 @@ export default function Hero() {
               >
                 <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z" />
               </svg>
-              Llego este año y necesito vivienda
+              Necesito vivienda ahora
             </a>
-          </div>
-
-          <div className="flex flex-wrap items-start gap-y-6 pt-[26px] border-t border-white/[0.08]">
-            {METRICS.map((metric, i) => (
-              <div
-                key={metric.value}
-                className={`flex-1 min-w-[150px] ${
-                  i > 0 ? "sm:pl-[30px] sm:border-l sm:border-white/10" : ""
-                } ${i < METRICS.length - 1 ? "sm:pr-[30px]" : ""}`}
-              >
-                <div
-                  className="font-sora font-extrabold text-[26px] sm:text-[28px] tracking-[-0.02em] bg-clip-text text-transparent"
-                  style={{
-                    backgroundImage:
-                      "linear-gradient(96deg, #6E8BF5, #A78BFA)",
-                  }}
-                >
-                  {metric.value}
-                </div>
-                <div className="text-[13px] sm:text-[13.5px] text-ink-quaternary leading-[1.35] mt-1 whitespace-pre-line">
-                  {metric.label}
-                </div>
-              </div>
-            ))}
           </div>
         </div>
 
-        <div className="relative">
-          <div className="relative rounded-[26px] overflow-hidden border border-white/[0.18] shadow-[0_60px_120px_-40px_rgba(0,0,0,0.95),0_0_0_6px_rgba(15,23,42,0.5)]">
+        <div className="w-full lg:flex-grow px-4 sm:px-8 lg:pl-0 pb-16 lg:py-12">
+          <div className="relative h-[280px] sm:h-[380px] lg:h-full rounded-card overflow-hidden">
             <Image
               src="/hero_night.jpg"
-              alt="Departamento en Montevideo de noche con vista al skyline"
+              alt="Departamento en Montevideo de noche, visto desde adentro"
               width={900}
-              height={480}
+              height={760}
               priority
-              className="w-full h-[340px] sm:h-[420px] lg:h-[480px] object-cover"
-              style={{ objectPosition: "58% center" }}
+              className="absolute inset-0 w-full h-full object-cover object-[62%_38%] lg:object-[56%_center]"
             />
+            {/* Scrim horizontal solo en desktop, donde el texto va al costado. */}
             <div
-              className="absolute inset-0 pointer-events-none"
+              className="absolute inset-0 pointer-events-none hidden lg:block"
               style={{
                 background:
-                  "linear-gradient(205deg, rgba(29,78,216,0.20), rgba(15,23,42,0.26) 40%, rgba(15,23,42,0.82))",
+                  "linear-gradient(to right, rgba(15,23,42,0.55), rgba(15,23,42,0.08) 40%, rgba(15,23,42,0.12))",
               }}
             />
-            <div className="absolute top-4 left-4 inline-flex items-center gap-2 px-3.5 py-2 rounded-full bg-[rgba(15,23,42,0.62)] backdrop-blur-[12px] border border-white/[0.14]">
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#10B981"
-                strokeWidth="2.2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                aria-hidden="true"
+            <div className="absolute inset-x-0 bottom-0 p-5 sm:p-7 bg-gradient-to-t from-[rgba(10,15,30,0.92)] via-[rgba(10,15,30,0.6)] to-transparent">
+              <p className="font-sora font-semibold text-[14px] sm:text-[15.5px] leading-[1.45] text-ink mb-2">
+                Montevideo recibe miles de estudiantes del interior cada año.
+              </p>
+              <Link
+                href="#problema"
+                className="text-[12.5px] text-amber no-underline font-semibold hover:text-ink transition-colors"
               >
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                <polyline points="9 12 11 14 15 10" />
-              </svg>
-              <span className="text-[11px] font-bold tracking-[0.1em] uppercase text-ink">
-                Perfiles verificados
-              </span>
+                Esto nos dijeron los que ya pasaron por eso →
+              </Link>
             </div>
-          </div>
-
-          <div className="mt-8 flex justify-center lg:mt-0 lg:block lg:absolute lg:-bottom-14 lg:-left-11 lg:w-[316px]">
-            <MatchCard matchScore={94} />
           </div>
         </div>
       </div>

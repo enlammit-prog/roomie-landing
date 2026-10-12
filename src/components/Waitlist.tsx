@@ -1,10 +1,16 @@
 "use client";
 
 import { useState } from "react";
-import Orbit from "./Orbit";
 import { WAITLIST_FORM_ENDPOINT } from "@/lib/forms";
+import { BOOKING_URL } from "@/lib/links";
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+const PASOS = [
+  "Te escribimos para entender qué estás buscando.",
+  "Entrás al primer grupo de acceso, antes que el resto.",
+  "Te consultamos las decisiones del producto mientras lo construimos.",
+];
 
 export default function Waitlist() {
   const [email, setEmail] = useState("");
@@ -47,50 +53,102 @@ export default function Waitlist() {
   };
 
   return (
-    <section id="waitlist" className="max-w-[1180px] mx-auto px-8 py-[110px]">
-      <div className="relative overflow-hidden rounded-card-lg px-6 sm:px-12 py-[76px] bg-gradient-to-br from-blue to-violet text-center">
-        <div className="absolute -bottom-[220px] -left-[140px] w-[520px] h-[520px] opacity-[0.22] pointer-events-none hidden sm:block">
-          <Orbit stroke="rgba(255,255,255,0.9)" />
-        </div>
-        <div className="relative z-[2] max-w-[600px] mx-auto">
-          <h2 className="font-sora font-extrabold text-[32px] sm:text-[46px] tracking-[-0.025em] leading-[1.06] mb-4 text-white">
-            Sumate a la lista de espera
+    <section
+      id="waitlist"
+      className="bg-bg-alt border-t border-hairline"
+    >
+      <div className="max-w-[1320px] mx-auto px-4 sm:px-8 py-20 lg:py-[100px] grid grid-cols-1 lg:grid-cols-[1fr_0.85fr] gap-12 lg:gap-20">
+        <div>
+          <h2 className="font-sora font-extrabold text-[30px] sm:text-[42px] tracking-[-0.035em] leading-[1.06] mb-5 text-balance">
+            Dejanos tu mail y construimos esto con vos.
           </h2>
-          <p className="text-lg text-white/[0.88] leading-[1.55] mb-9">
-            Sé de los primeros en encontrar tu roommate ideal cuando lancemos.
-            Sin spam, solo el aviso de lanzamiento.
+          <p className="text-[16px] sm:text-[17.5px] text-ink-secondary leading-[1.6] mb-9 max-w-[480px]">
+            Todavía estamos a tiempo de cambiar cosas. Si te sumás ahora, tu
+            opinión pesa más que la de nadie.
           </p>
 
           {submitted ? (
-            <div className="bg-white/[0.14] border border-white/30 rounded-[14px] p-[22px] text-white text-[17px] font-semibold">
-              ¡Listo! Te avisamos apenas abramos los primeros matches.
+            <div
+              role="status"
+              className="border-l-2 border-match bg-match/[0.08] px-5 py-4 text-[16px] text-ink font-semibold max-w-[480px]"
+            >
+              Listo. Te escribimos a {email} cuando abramos el acceso.
             </div>
           ) : (
             <form
               onSubmit={handleSubmit}
-              className="flex gap-3 max-w-[480px] mx-auto flex-wrap"
+              className="max-w-[480px]"
+              noValidate
             >
-              <input
-                type="email"
-                required
-                placeholder="tu@email.com"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="flex-1 min-w-[220px] px-5 py-4 rounded-btn border-none font-manrope text-base bg-white/[0.96] text-panel-from outline-none"
-              />
-              <button
-                type="submit"
-                disabled={loading}
-                className="border-none cursor-pointer bg-bg text-white font-manrope text-base font-bold px-7 py-4 rounded-btn disabled:opacity-60"
+              <label
+                htmlFor="waitlist-email"
+                className="block text-[13px] font-bold tracking-[0.1em] uppercase text-ink-quaternary mb-2.5"
               >
-                {loading ? "Enviando..." : "Quiero entrar"}
-              </button>
+                Tu correo
+              </label>
+              <div className="flex gap-2.5 flex-wrap">
+                <input
+                  id="waitlist-email"
+                  type="email"
+                  required
+                  autoComplete="email"
+                  aria-describedby={error ? "waitlist-error" : undefined}
+                  aria-invalid={error ? true : undefined}
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="flex-1 min-w-[220px] px-4 py-[14px] rounded-btn border border-white/[0.18] bg-white/[0.04] font-manrope text-base text-ink outline-none focus:border-amber focus:ring-1 focus:ring-amber"
+                />
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className="border-none cursor-pointer bg-amber-deep text-amber-ink font-manrope text-base font-bold px-6 py-[14px] rounded-btn hover:bg-amber active:translate-y-px transition-colors disabled:opacity-60"
+                >
+                  {loading ? "Enviando" : "Anotarme"}
+                </button>
+              </div>
+              {error && (
+                <p
+                  id="waitlist-error"
+                  className="mt-3 text-[14.5px] text-amber font-medium"
+                >
+                  {error}
+                </p>
+              )}
             </form>
           )}
+        </div>
 
-          {error && (
-            <p className="mt-4 text-sm text-white/90 font-medium">{error}</p>
-          )}
+        <div className="lg:border-l lg:border-white/[0.1] lg:pl-20">
+          <p className="text-[13px] font-bold tracking-[0.14em] uppercase text-ink-quaternary mb-6">
+            Qué pasa después
+          </p>
+          <ol className="flex flex-col">
+            {PASOS.map((paso, i) => (
+              <li
+                key={paso}
+                className="grid grid-cols-[28px_1fr] gap-4 py-5 border-t border-white/[0.1] last:border-b"
+              >
+                <span className="font-sora font-bold text-[14px] text-amber pt-px">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <span className="text-[15.5px] text-ink-secondary leading-[1.55]">
+                  {paso}
+                </span>
+              </li>
+            ))}
+          </ol>
+          <p className="text-[15px] text-ink-tertiary leading-[1.6] mt-7">
+            ¿Preferís hablar?{" "}
+            <a
+              href={BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-amber no-underline font-semibold border-b border-amber/40 pb-px hover:text-ink hover:border-ink transition-colors"
+            >
+              Coordiná una llamada de 15 minutos
+            </a>
+            .
+          </p>
         </div>
       </div>
     </section>

@@ -1,14 +1,10 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
-import DosPuertas from "@/components/DosPuertas";
-import PorQue from "@/components/PorQue";
 import Problema from "@/components/Problema";
+import Nosotros from "@/components/Nosotros";
 import Solucion from "@/components/Solucion";
-import ComoFunciona from "@/components/ComoFunciona";
-import ConciergeBanner from "@/components/ConciergeBanner";
-import ParaQuienEs from "@/components/ParaQuienEs";
+import DosPuertas from "@/components/DosPuertas";
 import Faq from "@/components/Faq";
-import Hablemos from "@/components/Hablemos";
 import Waitlist from "@/components/Waitlist";
 import Footer from "@/components/Footer";
 
@@ -17,15 +13,11 @@ export default function Home() {
     <>
       <Nav />
       <Hero />
-      <DosPuertas />
-      <PorQue />
       <Problema />
+      <Nosotros />
       <Solucion />
-      <ConciergeBanner />
-      <ComoFunciona />
-      <ParaQuienEs />
+      <DosPuertas />
       <Faq />
-      <Hablemos />
       <Waitlist />
       <Footer />
     </>

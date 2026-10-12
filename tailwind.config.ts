@@ -17,6 +17,10 @@ const config: Config = {
         blue: "#1D4ED8",
         violet: "#7C3AED",
         match: "#10B981",
+        // Acento de marca: la ventana encendida de noche.
+        amber: "#F0A868",
+        "amber-deep": "#E8814A",
+        "amber-ink": "#241509",
         "accent-blue": "#6E8BF5",
         "accent-violet": "#B79CF7",
         "accent-violet-light": "#C4B2FB",
@@ -27,11 +31,13 @@ const config: Config = {
         sora: ["var(--font-sora)", "sans-serif"],
         manrope: ["var(--font-manrope)", "system-ui", "sans-serif"],
       },
+      // Un solo sistema de esquinas, duro y parejo. El borde blando de 20 a
+      // 26px lee a plantilla; 3 a 4px lee editorial.
       borderRadius: {
-        card: "20px",
-        "card-lg": "24px",
-        btn: "12px",
-        chip: "8px",
+        card: "4px",
+        "card-lg": "4px",
+        btn: "3px",
+        chip: "3px",
       },
       boxShadow: {
         card: "0 44px 90px -34px rgba(0,0,0,0.75)",

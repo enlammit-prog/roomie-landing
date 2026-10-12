@@ -237,7 +237,7 @@ function FaqAccordion({ faqs }: { faqs: { q: string; a: string }[] }) {
               </span>
               <span
                 aria-hidden="true"
-                className={`shrink-0 w-8 h-8 flex items-center justify-center rounded-[8px] border border-violet/50 text-accent-violet font-sora font-semibold text-lg transition-transform duration-200 ${
+                className={`shrink-0 w-8 h-8 flex items-center justify-center rounded-chip border border-amber/50 text-amber font-sora font-semibold text-lg transition-transform duration-200 ${
                   isOpen ? "rotate-45" : ""
                 }`}
               >
@@ -264,7 +264,7 @@ export default function ConciergePage({ lang }: { lang: Lang }) {
       {/* ── Hero ── */}
       <section className="relative max-w-[1180px] mx-auto px-4 sm:px-8 py-[92px] pb-20 overflow-hidden">
         <div className="relative z-[2] max-w-[640px]">
-          <div className="inline-flex items-center gap-2 mb-[30px] px-4 py-2 rounded-full bg-violet/[0.12] border border-violet/40">
+          <div className="inline-flex items-center gap-2 mb-[30px] px-4 py-2 rounded-full bg-amber-deep/[0.10] border border-amber-deep/40">
             <span className="w-[7px] h-[7px] rounded-full bg-match inline-block" />
             <span className="text-sm font-medium text-ink-secondary">
               {t.hero.badge}
@@ -284,7 +284,7 @@ export default function ConciergePage({ lang }: { lang: Lang }) {
               href={whatsappUrl(WA_MSG[lang])}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2.5 bg-gradient-to-r from-blue to-violet text-white no-underline text-base font-semibold px-7 py-4 rounded-btn shadow-[0_16px_38px_-16px_rgba(124,58,237,0.7)]"
+              className="inline-flex items-center gap-2.5 bg-amber-deep text-amber-ink no-underline text-base font-bold px-[26px] py-4 rounded-btn hover:bg-amber active:translate-y-px transition-colors"
             >
               <WhatsAppIcon />
               {t.hero.ctaWa}
@@ -333,7 +333,7 @@ export default function ConciergePage({ lang }: { lang: Lang }) {
       {/* ── Cómo funciona ── */}
       <section className="max-w-[1180px] mx-auto px-4 sm:px-8 py-[110px]">
         <div className="flex items-baseline gap-3.5 mb-[22px]">
-          <span className="font-sora font-bold text-sm text-accent-blue">
+          <span className="font-sora font-bold text-sm text-amber">
             01
           </span>
           <span className="text-sm font-semibold text-ink-quaternary">
@@ -350,7 +350,7 @@ export default function ConciergePage({ lang }: { lang: Lang }) {
               key={step.n}
               className="rounded-card border border-white/[0.07] bg-[linear-gradient(145deg,#16213F,#0E1731)] p-7"
             >
-              <span className="font-sora font-bold text-[13px] text-accent-blue mb-4 block">
+              <span className="font-sora font-bold text-[13px] text-amber mb-4 block">
                 {step.n}
               </span>
               <h3 className="font-sora font-bold text-xl mb-3">{step.title}</h3>
@@ -366,7 +366,7 @@ export default function ConciergePage({ lang }: { lang: Lang }) {
       <section className="bg-bg-alt border-t border-b border-white/[0.06]">
         <div className="max-w-[1180px] mx-auto px-4 sm:px-8 py-[110px]">
           <div className="flex items-baseline gap-3.5 mb-[22px]">
-            <span className="font-sora font-bold text-sm text-accent-blue">
+            <span className="font-sora font-bold text-sm text-amber">
               02
             </span>
             <span className="text-sm font-semibold text-ink-quaternary">
@@ -395,7 +395,7 @@ export default function ConciergePage({ lang }: { lang: Lang }) {
       {/* ── FAQ ── */}
       <section className="max-w-[1180px] mx-auto px-4 sm:px-8 py-[110px]">
         <div className="flex items-baseline gap-3.5 mb-[22px]">
-          <span className="font-sora font-bold text-sm text-accent-blue">
+          <span className="font-sora font-bold text-sm text-amber">
             03
           </span>
           <span className="text-sm font-semibold text-ink-quaternary">
@@ -436,7 +436,7 @@ export default function ConciergePage({ lang }: { lang: Lang }) {
                 href={whatsappUrl(WA_MSG[lang])}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2.5 bg-gradient-to-r from-blue to-violet text-white no-underline text-base font-semibold px-9 py-4 rounded-btn shadow-[0_16px_38px_-16px_rgba(124,58,237,0.7)]"
+                className="inline-flex items-center gap-2.5 bg-amber-deep text-amber-ink no-underline text-base font-bold px-[26px] py-4 rounded-btn hover:bg-amber active:translate-y-px transition-colors"
               >
                 <WhatsAppIcon />
                 {t.cta.ctaWa}

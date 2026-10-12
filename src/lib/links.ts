@@ -19,3 +19,7 @@ export function whatsappUrl(message: string) {
 // Mensaje pre-armado para quien llega este año y necesita vivienda ya.
 export const WA_MSG_VIVIENDA_ES =
   "¡Hola ROOMIE! Llego a Montevideo a estudiar y me gustaría que me ayuden a conseguir dónde vivir.";
+
+// Casilla de contacto del equipo.
+export const CONTACT_EMAIL = "contacto.roomieuy@gmail.com";
+export const CONTACT_MAILTO = `mailto:${CONTACT_EMAIL}`;

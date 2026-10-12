@@ -18,7 +18,7 @@ export default async function OpengraphImage() {
           justifyContent: "space-between",
           backgroundColor: "#0B1124",
           backgroundImage:
-            "radial-gradient(circle at 85% 15%, rgba(124,58,237,0.35), transparent 55%), radial-gradient(circle at 10% 90%, rgba(29,78,216,0.35), transparent 55%)",
+            "radial-gradient(circle at 85% 15%, rgba(232,129,74,0.38), transparent 58%), radial-gradient(circle at 8% 92%, rgba(240,168,104,0.16), transparent 55%)",
           padding: "72px",
           fontFamily: "sans-serif",
         }}
@@ -33,7 +33,7 @@ export default async function OpengraphImage() {
               alignItems: "center",
               justifyContent: "center",
               background:
-                "linear-gradient(135deg, #1D4ED8, #7C3AED)",
+                "linear-gradient(135deg, #F0A868, #E8814A)",
               color: "#fff",
               fontSize: 22,
               fontWeight: 800,
@@ -60,7 +60,7 @@ export default async function OpengraphImage() {
                 width: 10,
                 height: 10,
                 borderRadius: "50%",
-                backgroundColor: "#10B981",
+                backgroundColor: "#F0A868",
               }}
             />
             <div style={{ fontSize: 22, color: "#A6B2CC", fontWeight: 500 }}>
@@ -100,7 +100,7 @@ export default async function OpengraphImage() {
             height: 6,
             width: 220,
             borderRadius: 4,
-            background: "linear-gradient(90deg, #1D4ED8, #7C3AED)",
+            background: "linear-gradient(90deg, #F0A868, #E8814A)",
           }}
         />
       </div>

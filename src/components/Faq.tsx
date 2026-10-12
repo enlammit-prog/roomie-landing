@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import SectionEyebrow from "./SectionEyebrow";
 
 const faqs = [
   {
@@ -35,10 +34,9 @@ export default function Faq() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="bg-bg-alt border-t border-b border-white/[0.06]">
-      <div className="max-w-[1180px] mx-auto px-8 py-[110px]">
-        <SectionEyebrow number="05" label="Preguntas frecuentes" className="mb-[22px]" />
-        <h2 className="font-sora font-extrabold text-[32px] sm:text-[44px] tracking-[-0.025em] leading-[1.08] max-w-[600px] mb-12">
+    <section id="faq" className="max-w-[1320px] mx-auto px-4 sm:px-8 py-20 lg:py-[110px]">
+      <div className="max-w-[820px]">
+        <h2 className="font-sora font-extrabold text-[30px] sm:text-[44px] tracking-[-0.035em] leading-[1.06] max-w-[600px] mb-12">
           Lo que solés preguntarte antes de empezar.
         </h2>
 
@@ -59,7 +57,7 @@ export default function Faq() {
                   </span>
                   <span
                     aria-hidden="true"
-                    className={`shrink-0 w-8 h-8 flex items-center justify-center rounded-[8px] border border-violet/50 text-accent-violet font-sora font-semibold text-lg transition-transform duration-200 ${
+                    className={`shrink-0 w-8 h-8 flex items-center justify-center rounded-chip border border-amber/50 text-amber font-sora font-semibold text-lg transition-transform duration-200 ${
                       isOpen ? "rotate-45" : ""
                     }`}
                   >

@@ -45,7 +45,7 @@ export default function ConversionBlock() {
           href={BOOKING_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-gradient-to-r from-blue to-violet text-white no-underline text-base font-semibold px-9 py-4 rounded-btn shadow-[0_16px_38px_-16px_rgba(124,58,237,0.7)]"
+          className="inline-block bg-amber-deep text-amber-ink no-underline text-base font-bold px-[26px] py-4 rounded-btn hover:bg-amber active:translate-y-px transition-colors"
         >
           Book a 15-min call
         </a>

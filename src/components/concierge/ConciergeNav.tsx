@@ -44,7 +44,7 @@ export default function ConciergeNav({ lang }: { lang: "es" | "en" }) {
             href={whatsappUrl(WA_MSG[lang])}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gradient-to-r from-blue to-violet text-white no-underline text-[13px] sm:text-[14.5px] font-semibold px-4 sm:px-5 py-2.5 sm:py-[11px] rounded-btn whitespace-nowrap"
+            className="bg-amber-deep text-amber-ink no-underline text-[13px] sm:text-[14.5px] font-bold px-4 sm:px-[18px] py-2.5 rounded-btn whitespace-nowrap hover:bg-amber transition-colors"
           >
             {l.cta}
           </a>

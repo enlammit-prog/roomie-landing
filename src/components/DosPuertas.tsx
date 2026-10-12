@@ -2,21 +2,21 @@ import { GOOGLE_FORM_URL, whatsappUrl, WA_MSG_VIVIENDA_ES } from "@/lib/links";
 
 export default function DosPuertas() {
   return (
-    <section className="max-w-[1180px] mx-auto px-4 sm:px-8 py-16">
-      <h2 className="font-sora font-extrabold text-[26px] sm:text-[34px] tracking-[-0.03em] leading-[1.1] mb-8 text-center">
-        ¿Cuándo llegás a Montevideo?
-      </h2>
+    <section className="bg-bg-alt border-t border-b border-hairline">
+      <div className="max-w-[1320px] mx-auto px-4 sm:px-8 py-20 lg:py-[90px]">
+        <h2 className="font-sora font-extrabold text-[26px] sm:text-[34px] tracking-[-0.03em] leading-[1.1] mb-10">
+          ¿Cuándo llegás a Montevideo?
+        </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="p-px rounded-[22px] bg-[linear-gradient(155deg,rgba(124,58,237,0.75),rgba(29,78,216,0.35)_55%,rgba(255,255,255,0.06))]">
-          <div className="h-full rounded-[21px] p-8 bg-gradient-to-br from-[rgba(28,24,64,0.82)] to-[rgba(13,20,38,0.92)] flex flex-col">
-            <span className="text-[11.5px] font-bold tracking-[0.1em] uppercase text-accent-violet-light mb-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/[0.1]">
+          <div className="bg-bg-alt p-8 lg:p-10 flex flex-col border-t-2 border-amber-deep">
+            <span className="text-[11.5px] font-bold tracking-[0.12em] uppercase text-amber mb-3">
               Este año
             </span>
-            <h3 className="font-sora font-bold text-2xl leading-tight mb-3">
+            <h3 className="font-sora font-bold text-[22px] sm:text-2xl leading-tight mb-3">
               No esperes a que lancemos.
             </h3>
-            <p className="text-[15.5px] leading-[1.6] text-ink-secondary mb-6 flex-grow">
+            <p className="text-[15.5px] leading-[1.6] text-ink-secondary mb-8 flex-grow">
               Hoy el equipo de ROOMIE busca, verifica y reserva tu vivienda por
               vos, antes de que te subas al avión o al ómnibus.
             </p>
@@ -24,7 +24,7 @@ export default function DosPuertas() {
               href={whatsappUrl(WA_MSG_VIVIENDA_ES)}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-blue to-violet text-white no-underline text-[15.5px] font-bold px-6 py-[15px] rounded-btn shadow-[0_16px_38px_-16px_rgba(124,58,237,0.85)]"
+              className="inline-flex items-center justify-center gap-2.5 self-start bg-amber-deep text-amber-ink no-underline text-[15.5px] font-bold px-6 py-[15px] rounded-btn hover:bg-amber transition-colors"
             >
               <svg
                 width="17"
@@ -42,17 +42,15 @@ export default function DosPuertas() {
               Escribinos por WhatsApp
             </a>
           </div>
-        </div>
 
-        <div className="p-px rounded-[22px] bg-[linear-gradient(155deg,rgba(255,255,255,0.14),rgba(255,255,255,0.03)_55%)]">
-          <div className="h-full rounded-[21px] p-8 bg-gradient-to-br from-[rgba(24,34,64,0.62)] to-[rgba(15,23,42,0.72)] flex flex-col">
-            <span className="text-[11.5px] font-bold tracking-[0.1em] uppercase text-ink-quaternary mb-3">
+          <div className="bg-bg-alt p-8 lg:p-10 flex flex-col border-t-2 border-white/[0.14]">
+            <span className="text-[11.5px] font-bold tracking-[0.12em] uppercase text-ink-quaternary mb-3">
               Más adelante
             </span>
-            <h3 className="font-sora font-bold text-2xl leading-tight mb-3">
+            <h3 className="font-sora font-bold text-[22px] sm:text-2xl leading-tight mb-3">
               Enterate antes que nadie.
             </h3>
-            <p className="text-[15.5px] leading-[1.6] text-ink-secondary mb-6 flex-grow">
+            <p className="text-[15.5px] leading-[1.6] text-ink-secondary mb-8 flex-grow">
               Dejanos tu mail. Te avisamos cuando abramos el acceso y te
               consultamos las decisiones del producto mientras lo construimos.
             </p>
@@ -60,7 +58,7 @@ export default function DosPuertas() {
               href={GOOGLE_FORM_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2.5 bg-white/[0.03] border border-white/[0.16] text-ink no-underline text-[15.5px] font-semibold px-6 py-[15px] rounded-btn hover:border-white/[0.34] hover:bg-white/[0.07] transition-colors"
+              className="inline-flex items-center gap-2 self-start text-ink no-underline text-[15.5px] font-semibold border-b border-white/30 pb-[3px] hover:border-amber hover:text-amber transition-colors"
             >
               Anotarme a la lista
               <svg

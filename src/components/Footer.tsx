@@ -23,7 +23,7 @@ export default function Footer() {
             href="/concierge"
             className="text-sm text-ink-muted no-underline hover:text-ink transition-colors"
           >
-            Te conseguimos vivienda
+            Necesito vivienda ahora
           </Link>
           <Link
             href="/exchange"
@@ -39,7 +39,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              className="w-[38px] h-[38px] rounded-chip border border-white/[0.12] bg-white/[0.04] flex items-center justify-center text-[#A6B2CC] hover:border-white/[0.28] hover:text-ink transition-colors"
+              className="w-[38px] h-[38px] rounded-chip border border-white/[0.12] bg-white/[0.04] flex items-center justify-center text-[#A6B2CC] hover:border-amber/60 hover:text-amber transition-colors"
             >
               <svg
                 width="18"
@@ -60,7 +60,7 @@ export default function Footer() {
             <a
               href="mailto:contacto.roomieuy@gmail.com"
               aria-label="Escribinos a contacto.roomieuy@gmail.com"
-              className="w-[38px] h-[38px] rounded-chip border border-white/[0.12] bg-white/[0.04] flex items-center justify-center text-[#A6B2CC] hover:border-white/[0.28] hover:text-ink transition-colors"
+              className="w-[38px] h-[38px] rounded-chip border border-white/[0.12] bg-white/[0.04] flex items-center justify-center text-[#A6B2CC] hover:border-amber/60 hover:text-amber transition-colors"
             >
               <svg
                 width="18"

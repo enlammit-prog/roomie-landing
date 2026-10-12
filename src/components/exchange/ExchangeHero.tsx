@@ -11,7 +11,7 @@ export default function ExchangeHero() {
 
       <div className="relative z-[2] grid grid-cols-1 lg:grid-cols-[1.04fr_0.96fr] gap-12 lg:gap-[60px] items-center">
         <div>
-          <div className="inline-flex items-center gap-2 mb-[30px] px-4 py-2 rounded-full bg-violet/[0.12] border border-violet/40">
+          <div className="inline-flex items-center gap-2 mb-[30px] px-4 py-2 rounded-full bg-amber-deep/[0.10] border border-amber-deep/40">
             <span className="w-[7px] h-[7px] rounded-full bg-match inline-block motion-safe:animate-pulse-soft" />
             <span className="text-sm font-medium text-ink-secondary">
               For exchange students coming to Montevideo
@@ -33,7 +33,7 @@ export default function ExchangeHero() {
               href={BOOKING_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2.5 bg-gradient-to-r from-blue to-violet text-white no-underline text-base font-bold px-7 py-[18px] rounded-btn shadow-[0_20px_46px_-18px_rgba(124,58,237,0.95),inset_0_1px_0_rgba(255,255,255,0.22)] hover:-translate-y-[3px] hover:shadow-[0_28px_60px_-18px_rgba(124,58,237,1)] transition-all duration-[180ms]"
+              className="inline-flex items-center gap-2.5 bg-amber-deep text-amber-ink no-underline text-base font-bold px-[26px] py-4 rounded-btn hover:bg-amber active:translate-y-px transition-colors"
             >
               Book a 15-min call
               <svg
