@@ -92,9 +92,17 @@ export default function Footer() {
           <p className="text-[12.5px] text-ink-muted leading-[1.6] tracking-[0.01em]">
             © {years} ROOMIE. Todos los derechos reservados.
           </p>
-          <p className="text-[12.5px] text-ink-muted leading-[1.6] tracking-[0.01em] sm:text-right">
-            Hecho en Montevideo, Uruguay.
-          </p>
+          <div className="flex items-center gap-5 flex-wrap">
+            <Link
+              href="/privacidad"
+              className="text-[12.5px] text-ink-muted no-underline tracking-[0.01em] hover:text-ink transition-colors"
+            >
+              Privacidad
+            </Link>
+            <p className="text-[12.5px] text-ink-muted leading-[1.6] tracking-[0.01em]">
+              Hecho en Montevideo, Uruguay.
+            </p>
+          </div>
         </div>
       </div>
     </footer>
