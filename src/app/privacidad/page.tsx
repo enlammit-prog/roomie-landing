@@ -75,14 +75,9 @@ export default function PrivacidadPage() {
             Última actualización: {ACTUALIZADO}
           </p>
 
-          <h1 className="font-sora font-extrabold text-[34px] sm:text-[46px] tracking-[-0.04em] leading-[1.04] mb-6">
+          <h1 className="font-sora font-extrabold text-[34px] sm:text-[46px] tracking-[-0.04em] leading-[1.04] mb-14">
             Política de privacidad
           </h1>
-
-          <p className="text-[17.5px] sm:text-[19px] leading-[1.65] text-[#C7D0E4] mb-14">
-            Está escrita en criollo y es corta porque recogemos muy pocos datos.
-            Si algo no te queda claro, escribinos y te lo explicamos.
-          </p>
 
           <Seccion titulo="Qué datos recogemos">
             <p>
@@ -107,20 +102,6 @@ export default function PrivacidadPage() {
             </p>
           </Seccion>
 
-          <Seccion titulo="Qué NO recogemos">
-            <p>
-              Este sitio <strong className="text-ink font-semibold">no usa
-              cookies</strong>, no tiene Google Analytics, no tiene píxel de
-              Meta ni de ninguna red social, y no instala ningún rastreador. No
-              seguimos tu navegación, no armamos perfiles tuyos y no te
-              mostramos publicidad en base a lo que hacés acá.
-            </p>
-            <p>
-              Por eso tampoco vas a ver un cartel de cookies: no hay nada que
-              aceptar.
-            </p>
-          </Seccion>
-
           <Seccion titulo="Para qué los usamos">
             <p>
               Para avisarte cuando abramos el acceso, para responderte si nos
@@ -133,39 +114,6 @@ export default function PrivacidadPage() {
               </strong>{" "}
               No vendemos, alquilamos ni cedemos tus datos a nadie, y no te
               vamos a mandar publicidad de terceros.
-            </p>
-          </Seccion>
-
-          <Seccion titulo="Dónde se guardan">
-            <p>
-              Usamos servicios de terceros para funcionar, y tus datos pasan por
-              ellos:
-            </p>
-            <ul className="flex flex-col gap-3 mt-1">
-              {[
-                ["Formspree", "recibe y almacena los correos de la lista de espera."],
-                ["Google", "Forms para las encuestas, Calendar para las llamadas y Gmail para el correo de contacto."],
-                ["Meta", "WhatsApp, si nos escribís por ahí."],
-                ["Vercel", "aloja este sitio y, como cualquier servidor web, registra accesos técnicos."],
-              ].map(([nombre, detalle]) => (
-                <li
-                  key={nombre}
-                  className="grid grid-cols-[auto_1fr] gap-x-3 items-baseline"
-                >
-                  <span className="font-sora font-bold text-[14px] text-amber">
-                    ·
-                  </span>
-                  <span>
-                    <strong className="text-ink font-semibold">{nombre}</strong>{" "}
-                    {detalle}
-                  </span>
-                </li>
-              ))}
-            </ul>
-            <p>
-              Estas empresas están fuera de Uruguay y cada una tiene su propia
-              política de privacidad. No tenemos control sobre cómo tratan los
-              datos más allá de lo que les enviamos.
             </p>
           </Seccion>
 

@@ -75,15 +75,9 @@ export default function PrivacyPage() {
             Last updated: {UPDATED}
           </p>
 
-          <h1 className="font-sora font-extrabold text-[34px] sm:text-[46px] tracking-[-0.04em] leading-[1.04] mb-6">
+          <h1 className="font-sora font-extrabold text-[34px] sm:text-[46px] tracking-[-0.04em] leading-[1.04] mb-14">
             Privacy policy
           </h1>
-
-          <p className="text-[17.5px] sm:text-[19px] leading-[1.65] text-[#C7D0E4] mb-14">
-            It is written in plain language and it is short, because we collect
-            very little. If anything is unclear, write to us and we will explain
-            it.
-          </p>
 
           <Section title="What we collect">
             <p>
@@ -108,23 +102,6 @@ export default function PrivacyPage() {
             </p>
           </Section>
 
-          <Section title="What we do NOT collect">
-            <p>
-              This site{" "}
-              <strong className="text-ink font-semibold">
-                uses no cookies
-              </strong>
-              . There is no Google Analytics, no Meta pixel, no social network
-              pixel and no tracker of any kind. We do not follow your browsing,
-              we do not build a profile of you and we do not show you ads based
-              on what you do here.
-            </p>
-            <p>
-              That is also why you will not see a cookie banner: there is nothing
-              to accept.
-            </p>
-          </Section>
-
           <Section title="What we use it for">
             <p>
               To let you know when we open access, to reply if you wrote to us,
@@ -135,39 +112,6 @@ export default function PrivacyPage() {
               <strong className="text-ink font-semibold">Nothing else.</strong>{" "}
               We do not sell, rent or hand over your data to anyone, and we will
               not send you third party advertising.
-            </p>
-          </Section>
-
-          <Section title="Where it is stored">
-            <p>
-              We rely on third party services to operate, and your data passes
-              through them:
-            </p>
-            <ul className="flex flex-col gap-3 mt-1">
-              {[
-                ["Formspree", "receives and stores the waiting list emails."],
-                ["Google", "Forms for surveys, Calendar for calls and Gmail for our contact inbox."],
-                ["Meta", "WhatsApp, if you message us there."],
-                ["Vercel", "hosts this site and, like any web server, logs technical access data."],
-              ].map(([name, detail]) => (
-                <li
-                  key={name}
-                  className="grid grid-cols-[auto_1fr] gap-x-3 items-baseline"
-                >
-                  <span className="font-sora font-bold text-[14px] text-amber">
-                    ·
-                  </span>
-                  <span>
-                    <strong className="text-ink font-semibold">{name}</strong>{" "}
-                    {detail}
-                  </span>
-                </li>
-              ))}
-            </ul>
-            <p>
-              These companies are based outside Uruguay and each has its own
-              privacy policy. We have no control over how they handle data beyond
-              what we send them.
             </p>
           </Section>
 
