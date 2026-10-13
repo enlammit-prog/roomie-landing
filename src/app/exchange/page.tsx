@@ -27,7 +27,7 @@ export default function ExchangePage() {
       <TrustRow />
       <ConciergeBannerEn />
       <ConversionBlock />
-      <Footer />
+      <Footer lang="en" />
     </>
   );
 }

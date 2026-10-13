@@ -52,12 +52,20 @@ export default function PrivacidadPage() {
               ROOMIE
             </span>
           </Link>
-          <Link
-            href="/"
-            className="text-[#9AA7C2] no-underline text-[14.5px] font-medium hover:text-ink transition-colors"
-          >
-            Volver al inicio
-          </Link>
+          <div className="flex items-center gap-6">
+            <Link
+              href="/privacy"
+              className="text-[#9AA7C2] no-underline text-[14.5px] font-medium hover:text-ink transition-colors"
+            >
+              English
+            </Link>
+            <Link
+              href="/"
+              className="text-[#9AA7C2] no-underline text-[14.5px] font-medium hover:text-ink transition-colors"
+            >
+              Volver al inicio
+            </Link>
+          </div>
         </nav>
       </header>
 

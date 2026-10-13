@@ -1,9 +1,31 @@
 import Image from "next/image";
 import Link from "next/link";
+import { CONTACT_EMAIL, CONTACT_MAILTO } from "@/lib/links";
 
 const DESDE = 2025;
 
-export default function Footer() {
+const COPY = {
+  es: {
+    concierge: { href: "/concierge", label: "Necesito vivienda ahora" },
+    otroIdioma: { href: "/exchange", label: "For exchange students" },
+    privacidad: { href: "/privacidad", label: "Privacidad" },
+    derechos: "Todos los derechos reservados.",
+    hecho: "Hecho en Montevideo, Uruguay.",
+    mailAria: `Escribinos a ${CONTACT_EMAIL}`,
+  },
+  en: {
+    concierge: { href: "/concierge/en", label: "Need a place to live?" },
+    otroIdioma: { href: "/", label: "Versión en español" },
+    privacidad: { href: "/privacy", label: "Privacy" },
+    derechos: "All rights reserved.",
+    hecho: "Made in Montevideo, Uruguay.",
+    mailAria: `Email us at ${CONTACT_EMAIL}`,
+  },
+};
+
+export default function Footer({ lang = "es" }: { lang?: "es" | "en" }) {
+  const t = COPY[lang];
+
   // El año se fija al momento del build, que es lo habitual en un sitio
   // estático: cada deploy lo actualiza.
   const hasta = new Date().getFullYear();
@@ -27,16 +49,16 @@ export default function Footer() {
 
         <div className="flex items-center gap-5 flex-wrap">
           <Link
-            href="/concierge"
+            href={t.concierge.href}
             className="text-sm text-ink-muted no-underline hover:text-ink transition-colors"
           >
-            Necesito vivienda ahora
+            {t.concierge.label}
           </Link>
           <Link
-            href="/exchange"
+            href={t.otroIdioma.href}
             className="text-sm text-ink-muted no-underline hover:text-ink transition-colors"
           >
-            For exchange students
+            {t.otroIdioma.label}
           </Link>
           <span className="text-sm text-ink-muted">roomieuy.com</span>
 
@@ -65,8 +87,8 @@ export default function Footer() {
             </a>
 
             <a
-              href="mailto:contacto.roomieuy@gmail.com"
-              aria-label="Escribinos a contacto.roomieuy@gmail.com"
+              href={CONTACT_MAILTO}
+              aria-label={t.mailAria}
               className="w-[38px] h-[38px] rounded-chip border border-white/[0.12] bg-white/[0.04] flex items-center justify-center text-[#A6B2CC] hover:border-amber/60 hover:text-amber transition-colors"
             >
               <svg
@@ -90,17 +112,17 @@ export default function Footer() {
       <div className="max-w-[1180px] mx-auto px-4 sm:px-8 mt-9 border-t border-white/[0.07]">
         <div className="py-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-x-8 gap-y-3">
           <p className="text-[12.5px] text-ink-muted leading-[1.6] tracking-[0.01em]">
-            © {years} ROOMIE. Todos los derechos reservados.
+            © {years} ROOMIE. {t.derechos}
           </p>
           <div className="flex items-center gap-5 flex-wrap">
             <Link
-              href="/privacidad"
+              href={t.privacidad.href}
               className="text-[12.5px] text-ink-muted no-underline tracking-[0.01em] hover:text-ink transition-colors"
             >
-              Privacidad
+              {t.privacidad.label}
             </Link>
             <p className="text-[12.5px] text-ink-muted leading-[1.6] tracking-[0.01em]">
-              Hecho en Montevideo, Uruguay.
+              {t.hecho}
             </p>
           </div>
         </div>

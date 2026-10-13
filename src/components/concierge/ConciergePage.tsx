@@ -454,7 +454,7 @@ export default function ConciergePage({ lang }: { lang: Lang }) {
         </div>
       </section>
 
-      <Footer />
+      <Footer lang={lang} />
     </>
   );
 }
