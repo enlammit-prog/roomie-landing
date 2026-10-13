@@ -100,6 +100,11 @@ export default function PrivacidadPage() {
               </strong>
               , si completaste alguna de nuestras encuestas.
             </p>
+            <p>
+              Para funcionar usamos servicios de terceros alojados fuera de
+              Uruguay, que almacenan los correos de la lista y alojan este
+              sitio. Si querés saber cuáles, escribinos.
+            </p>
           </Seccion>
 
           <Seccion titulo="Para qué los usamos">

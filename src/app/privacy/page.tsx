@@ -100,6 +100,11 @@ export default function PrivacyPage() {
               </strong>
               , if you filled in one of our surveys.
             </p>
+            <p>
+              To operate we rely on third party services hosted outside Uruguay,
+              which store the waiting list emails and host this site. If you
+              want to know which ones, write to us.
+            </p>
           </Section>
 
           <Section title="What we use it for">
